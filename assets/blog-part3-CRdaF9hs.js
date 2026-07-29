@@ -162,3 +162,4 @@ const e=[{id:"blog-27",slug:"how-to-build-a-5-star-reputation-on-trustpilot-from
   <li><strong>Diversify Payment Processing Across Backup Accounts:</strong> Maintain secondary verified PayPal Business accounts from ReviewSellStore to split processing volume safely.</li>
 </ol>
 `}];export{e as B};
+//# sourceMappingURL=blog-part3-CRdaF9hs.js.map

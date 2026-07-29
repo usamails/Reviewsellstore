@@ -321,3 +321,4 @@ const e=[{id:"blog-1",slug:"how-to-buy-verified-paypal-business-accounts-without
 <h3>3. Maintain Secondary Merchant Payment Gateways</h3>
 <p>Never rely on a single merchant account. Maintain backup verified PayPal Business accounts and secondary payment processors to keep checkout active if primary accounts undergo routine audits.</p>
 `}];export{e as B};
+//# sourceMappingURL=blog-part1-C9K8X0x0.js.map
