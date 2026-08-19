@@ -1,0 +1,1207 @@
+import { ServiceCategory, ServiceItem, CryptoAddress, FAQItem, WhyChooseUsItem } from '../types';
+
+export const SERVICE_CATEGORIES: ServiceCategory[] = [
+  {
+    id: 'verified-accounts',
+    name: 'Verified Accounts',
+    description: 'Fully verified payment, banking, and merchant accounts with full credentials.',
+    icon: 'ShieldCheck',
+    count: 2,
+    popularItem: 'PayPal Business ($130)'
+  },
+  {
+    id: 'reputation-management',
+    name: 'Reputation Management',
+    description: 'High quality Google & Trustpilot reviews, plus bad review removal services.',
+    icon: 'Star',
+    count: 6,
+    popularItem: 'Local Guide Review ($15)'
+  },
+  {
+    id: 'gmail-accounts',
+    name: 'Gmail Accounts',
+    description: 'PVA, USA, Aged, Google Ads ready, Review ready, and fresh bulk Gmails.',
+    icon: 'Mail',
+    count: 6,
+    popularItem: '50 USA Gmails ($130)'
+  },
+  {
+    id: 'virtual-number-services',
+    name: 'Virtual Number Services',
+    description: 'Google Voice, TextNow, Talkatone & TextPlus virtual numbers & subscriptions.',
+    icon: 'Phone',
+    count: 2,
+    popularItem: 'Google Voice Number ($10)'
+  },
+  {
+    id: 'communication-accounts',
+    name: 'Communication Accounts',
+    description: 'Dedicated phone & messaging profiles for multi-region business communications.',
+    icon: 'MessageSquare',
+    count: 2,
+    popularItem: 'Talkatone Subscription ($25)'
+  },
+  {
+    id: 'developer-accounts',
+    name: 'Developer Accounts',
+    description: 'Aged GitHub accounts with established repository history and commit logs.',
+    icon: 'Code2',
+    count: 1,
+    popularItem: '7+ Year GitHub Account ($50)'
+  }
+];
+
+export const ALL_SERVICES: ServiceItem[] = [
+  // 1. Verified PayPal Personal Account
+  {
+    id: 'paypal-personal',
+    slug: 'buy-verified-paypal-personal-account',
+    categoryId: 'verified-accounts',
+    categoryName: 'Verified Accounts',
+    title: 'Verified PayPal Account (Personal)',
+    variant: 'Personal Account',
+    price: 80,
+    unit: 'Per Account',
+    deliveryTime: '10 - 30 Mins',
+    description: 'Fully phone & SSN verified personal PayPal account. Includes recovery email, bank linked status, cookies, and 100% login warranty.',
+    seoTitle: 'Buy Verified Personal PayPal Account | USA Verified & Ready',
+    seoKeywords: ['buy verified paypal account', 'buy personal paypal account', 'phone verified paypal', 'ssn verified paypal', 'buy cheap paypal account'],
+    longDescription: `Looking to buy a fully verified PayPal personal account with zero restrictions? ReviewSellStore provides fully verified USA & European PayPal personal accounts created using high-quality clean residential proxy IPs, real mobile carrier SIM cards, and legitimate SSN identity verification. Whether you are a freelancer, e-commerce entrepreneur, or online shopper, our verified PayPal personal accounts give you a reliable payment gateway profile built for immediate send and receive operations.
+
+Our personal PayPal account packages come complete with full access credentials: primary email inbox login, email password, recovery email password, linked phone number details, user-agent profile, and full JSON browser cookies for seamless session restoration without triggering security checkpoints or identity prompts. You receive complete ownership of every account detail, ensuring you are in full control from the moment your order is dispatched.
+
+When you buy a verified PayPal account from us, you get a reliable, aged, and fully functional payment gateway profile built for maximum longevity and zero transaction limit locks on delivery. Every account is thoroughly pre-warmed and checked against automated fraud security parameters prior to dispatch. This ensures that your account maintains high trust scores with PayPal's risk management algorithms during day-to-day transactions.
+
+To guarantee effortless onboarding, our technical support team provides step-by-step guidance on importing session cookies into antidetect browsers (such as AdsPower, Multilogin, Dolphin, or GoLogin) matching the account region. By matching the residential proxy IP and browser user-agent string provided with your account, you eliminate location mismatch flags and keep your session stable for cross-border money transfers, freelance invoice payouts, and online shopping.
+
+In addition to initial setup support, our verified personal PayPal accounts can be easily linked with your own credit card, virtual payment card, or bank account after a brief initial warm-up period. This flexibility allows you to expand your payment capabilities, manage digital subscriptions, and receive international client payments worldwide without friction.
+
+Every order is backed by our 100% 48-hour free replacement guarantee for any initial credential issues or login checkpoints. Should you encounter any questions during setup, our dedicated 24/7 technical support team on Telegram (@EgSupport24) and WhatsApp (+1 307-393-9979) is on standby to assist you immediately. Pay securely using any of our 12 supported cryptocurrency networks for instant order delivery.`,
+    features: [
+      '100% Phone & Email Verified (PVA)',
+      'SSN & Real Bank/Card Linked Status',
+      'Includes JSON Browser Cookies & User-Agent Profile',
+      'Full Email Inbox Access Included',
+      '48-Hour Instant Replacement Guarantee',
+      'Zero Transaction Limit Locks on Delivery'
+    ],
+    useCases: ['Freelance Payment Reception', 'Cross-Border Personal Transfers', 'E-Commerce Online Checkout', 'Digital Subscription Management'],
+    variants: [
+      { id: 'pp-pers-1', name: '1 Personal Account', quantity: 1, price: 80, unit: 'Account' },
+      { id: 'pp-pers-2', name: '2 Personal Accounts', quantity: 2, price: 150, unit: 'Accounts', savePercent: 'Save $10' },
+      { id: 'pp-pers-5', name: '5 Personal Accounts', quantity: 5, price: 360, unit: 'Accounts', savePercent: 'Save $40' },
+      { id: 'pp-pers-10', name: '10 Personal Accounts', quantity: 10, price: 700, unit: 'Accounts', savePercent: 'Save $100' }
+    ],
+    faqs: [
+      { question: 'Is the verified personal PayPal account ready for immediate transactions?', answer: 'Yes, all personal accounts are 100% phone, email, and SSN verified and ready for send/receive operations upon delivery.' },
+      { question: 'What exact details are delivered after purchasing?', answer: 'You will receive the PayPal login email, password, recovery email login, phone verification details, browser cookies (JSON format), and user-agent profile string.' },
+      { question: 'How do I log in safely without triggering account locks?', answer: 'We deliver browser session cookies and user-agent specs. Import the cookies into a clean browser or antidetect browser (like AdsPower, Multilogin, or Dolphin) matching the account region.' },
+      { question: 'Can I link my own credit card or bank account later?', answer: 'Yes, you can add your own bank account, debit card, or virtual payment card to the account after a brief initial warm-up period.' },
+      { question: 'What is the transaction limit for a personal verified account?', answer: 'Verified personal accounts carry standard un-lifted limits suitable for daily payments up to $2,000–$5,000 per transaction.' },
+      { question: 'What happens if I encounter a login checkpoint or error?', answer: 'We offer a 100% 48-hour replacement warranty. If there is any initial login issue, our support team replaces the account instantly.' },
+      { question: 'Are these accounts created with real carrier phone numbers?', answer: 'Yes, all phone verifications are completed using real US/EU physical mobile carrier SIMs, not temporary VoIP numbers.' },
+      { question: 'Can I receive international payments from clients worldwide?', answer: 'Yes, these verified PayPal accounts support cross-border money transfers, invoice settlements, and personal payments worldwide.' },
+      { question: 'Do you provide customer support for session setup?', answer: 'Yes, our 24/7 technical team on Telegram (@EgSupport24) and WhatsApp (+1 307-393-9979) guides you through cookie import and setup.' }
+    ]
+  },
+
+  // 2. Verified PayPal Business Account
+  {
+    id: 'paypal-business',
+    slug: 'buy-verified-paypal-business-account',
+    categoryId: 'verified-accounts',
+    categoryName: 'Verified Accounts',
+    title: 'Verified PayPal Account (Business Merchant)',
+    variant: 'Business Account',
+    price: 130,
+    unit: 'Per Account',
+    isPopular: true,
+    deliveryTime: '15 - 45 Mins',
+    description: 'Fully verified merchant PayPal Business account. Unrestricted limits, EIN tax ID verification, and high transaction tolerance.',
+    seoTitle: 'Buy Verified PayPal Business Account | Merchant Verified High Limits',
+    seoKeywords: ['buy paypal business account', 'verified merchant paypal', 'ein verified paypal', 'high limit paypal account', 'buy paypal merchant account'],
+    longDescription: `Elevate your company's payment infrastructure with a fully verified PayPal Business Merchant Account from ReviewSellStore. Designed specifically for e-commerce store owners, SaaS platforms, high-ticket agencies, affiliate marketers, and dropshippers who require high daily volume capacity, unrestricted processing limits, and low chargeback lock risks, our verified PayPal merchant accounts provide the ultimate commercial payment gateway solution.
+
+Our merchant PayPal accounts are registered with legitimate business profile details, EIN/Tax documentation, verified bank accounts, and corporate email domains. Each account package includes complete document proof sets (front and back driver license ID scans, passport copies, utility bill proof of address, and official business registration files) to safeguard your business against unexpected security holds, identity reviews, or verification requests.
+
+Enjoy seamless integration with Shopify, WooCommerce, Magento, Stripe alternatives, custom API webhooks, and multi-currency billing setups. Each business account is configured with multi-currency wallet support (USD, EUR, GBP, CAD, AUD) so you can accept cross-border buyer payments without automatic currency conversion friction or inflated foreign transaction fees.
+
+Furthermore, we supply full administrative rights: primary email inbox access, 2FA backup recovery keys, user-agent profiles, and JSON browser cookies. Importing these cookies into antidetect browsers like AdsPower, Multilogin, or Dolphin along with static US/EU residential proxies ensures seamless, checkpoint-free session management and long-term operational stability.
+
+High-volume merchants appreciate our accounts because they carry pre-conditioned trust factors that allow for smooth scaling. Whether you are running seasonal ad campaigns, launching new digital products, or processing mass client payouts, our verified PayPal Business profiles handle daily revenue streams with maximum reliability and minimal disruption.
+
+Backed by our 24/7 dedicated Telegram VIP merchant support and a 48-hour 100% free replacement guarantee for any initial login or credential mismatch, ReviewSellStore is your trusted partner for enterprise payment solutions. Complete checkout using Bitcoin, Ethereum, USDT, Solana, or any of our 12 accepted cryptocurrency options for fast, confidential delivery.`,
+    features: [
+      'EIN & Business Tax ID Verified',
+      'High Instant Daily Transaction Limits',
+      'Full Identity Documents & Utility Bill Proof Included',
+      'Integrated API, Webhooks & Mass Payout Capabilities',
+      'Dedicated 24/7 Priority VIP Merchant Support',
+      'Multi-Currency Payment Processing Enabled'
+    ],
+    useCases: ['Shopify & WooCommerce Checkout', 'High-Volume SaaS Billings', 'Digital Agency Client Invoicing', 'Affiliate Network Payouts'],
+    variants: [
+      { id: 'pp-biz-1', name: '1 Business Merchant Account', quantity: 1, price: 130, unit: 'Account', isPopular: true },
+      { id: 'pp-biz-2', name: '2 Business Merchant Accounts', quantity: 2, price: 250, unit: 'Accounts', savePercent: 'Save $10' },
+      { id: 'pp-biz-5', name: '5 Business Merchant Accounts', quantity: 5, price: 600, unit: 'Accounts', savePercent: 'Save $50' },
+      { id: 'pp-biz-10', name: '10 Business Merchant Accounts', quantity: 10, price: 1150, unit: 'Accounts', savePercent: 'Save $150' }
+    ],
+    faqs: [
+      { question: 'What verification documents come with the PayPal Business account?', answer: 'Every business account package includes driver license/passport scans, SSN/EIN document files, and residential utility bill address proofs.' },
+      { question: 'Is the business PayPal account integrated with Shopify and WooCommerce?', answer: 'Yes, you can connect the merchant account directly to Shopify, WooCommerce, Magento, or custom payment webhooks.' },
+      { question: 'Can I process high volume sales right after delivery?', answer: 'Yes, but for long-term health, we recommend warming up transactions gradually over the first 3 to 5 days.' },
+      { question: 'Can I change the company display name and support email?', answer: 'Yes, you have full administrative rights to customize the business name, customer email, logo, and statement descriptor.' },
+      { question: 'Is two-factor authentication (2FA) configured?', answer: 'Yes, 2FA backup codes or access to the linked phone/email are provided so you can set up your own authenticator app.' },
+      { question: 'What is the refund and replacement policy for business accounts?', answer: 'We offer a full 100% replacement warranty if there is any initial login or credential mismatch within 48 hours.' },
+      { question: 'Are these accounts registered with clean residential proxies?', answer: 'Yes, all accounts are registered on clean static residential US/EU proxies with immaculate IP history.' },
+      { question: 'Can I link my company bank account or withdrawal card?', answer: 'Yes, you can attach your own bank account or Wise/Payoneer/Mercury routing details for payouts.' },
+      { question: 'Do you accept cryptocurrency for PayPal Business account orders?', answer: 'Yes, we accept BTC, ETH, USDT (TRC20/ERC20/BEP20), SOL, and 8+ major cryptocurrencies with instant checkout.' }
+    ]
+  },
+
+  // 3. Standard Google Review
+  {
+    id: 'google-review-standard',
+    slug: 'buy-standard-google-reviews',
+    categoryId: 'reputation-management',
+    categoryName: 'Reputation Management',
+    title: 'Google Reviews (Standard 5-Star)',
+    variant: 'Standard Google Review',
+    price: 10,
+    unit: 'Per Review',
+    deliveryTime: 'Drip-Fed (1-3 Days)',
+    description: 'Realistic 5-star Google review from active geo-targeted profiles with custom text, photo support, and sticky warranty.',
+    seoTitle: 'Buy 5-Star Google Reviews | Organic Geo-Targeted Business Reviews',
+    seoKeywords: ['buy google reviews', 'buy 5 star google reviews', 'google maps reviews', 'geo targeted google reviews', 'buy google business reviews'],
+    longDescription: `Elevate your local business rankings on Google Maps and Local Search with organic 5-star Google Reviews from ReviewSellStore. In today's digital marketplace, over 90% of consumers inspect Google Maps ratings before choosing a local contractor, restaurant, medical clinic, or service provider. A steady stream of positive Google reviews directly increases click-through rates on Local Map Packs (3-Pack), builds immediate consumer trust, and drives foot traffic and web inquiries.
+
+Our standard 5-star Google reviews are posted by aged, real consumer accounts featuring genuine device activity, realistic location check-ins, authentic browser cookies, and natural browsing behavior across local maps, search queries, and YouTube streams. Profiles used are aged 6+ months with clean residential proxy IP addresses matching your business's exact geographic region (USA, UK, Canada, Australia, Europe, etc.).
+
+We support complete review customization: you can supply exact review copy, specify target keywords (e.g., "best emergency plumber in Chicago" or "affordable dental clinic in Miami"), and include custom photos of your storefront, team, or completed jobs. If you prefer, our professional copywriting team will craft authentic, native-sounding customer feedback tailored specifically to your industry and brand identity.
+
+To protect your listing against automated spam triggers, our proprietary drip-feed system posts reviews at natural intervals matching your business volume. Rather than posting reviews all at once, we spread them over days or weeks according to your preferred delivery pace. This intelligent schedule mimics natural word-of-mouth feedback and satisfies Google's anti-spam guidelines 100%.
+
+In addition to ranking benefits, acquiring positive Google reviews lowers customer acquisition costs (CAC) by turning casual searchers into paying clients. High star ratings provide the social proof needed to overcome buyer hesitation and outperform local competitors in crowded search markets.
+
+Every package comes with our industry-leading 30-day non-drop sticky replacement warranty and 24/7 dedicated client support on Telegram (@EgSupport24) and WhatsApp (+1 307-393-9979). Order today with zero hassle using Bitcoin, Ethereum, USDT, Solana, or major cryptocurrencies.`,
+    features: [
+      'GEO-Targeted Active Consumer Google Profiles',
+      'Custom Review Text & Photo Attachments Supported',
+      'Sticky & Natural Drip-Feed Submission Pace',
+      '30-Day Non-Drop Replacement Warranty',
+      'Boosts Google Maps 3-Pack Local Rankings',
+      'Native Language Copywriting Included'
+    ],
+    useCases: ['Local Business Map Pack Ranking', 'E-Commerce Trust Building', 'Service Business Reputation Repair', 'New Business Launch Social Proof'],
+    variants: [
+      { id: 'g-std-1', name: '1 Google Review', quantity: 1, price: 10, unit: 'Review' },
+      { id: 'g-std-5', name: '5 Google Reviews', quantity: 5, price: 45, unit: 'Reviews', savePercent: 'Save $5' },
+      { id: 'g-std-10', name: '10 Google Reviews', quantity: 10, price: 85, unit: 'Reviews', savePercent: 'Save $15', isPopular: true },
+      { id: 'g-std-25', name: '25 Google Reviews', quantity: 25, price: 200, unit: 'Reviews', savePercent: 'Save $50' },
+      { id: 'g-std-50', name: '50 Google Reviews', quantity: 50, price: 380, unit: 'Reviews', savePercent: 'Save $120' }
+    ],
+    faqs: [
+      { question: 'Can I supply my own custom review text and photos?', answer: 'Yes! You can enter your custom text and photos during checkout, or our professional copywriting team will draft authentic reviews for you.' },
+      { question: 'Are the Google reviews permanent and sticky?', answer: 'Yes, our reviews are published using aged profiles and residential IPs, giving them a 99%+ retention rate backed by a 30-day non-drop sticky warranty.' },
+      { question: 'How quickly are the reviews posted to my Google profile?', answer: 'Reviews are drip-fed naturally at a rate of 1 to 3 reviews per day to mimic organic customer feedback and protect your Google listing.' },
+      { question: 'Will Google ban my Google Business Profile (GBP)?', answer: 'No, our drip-feed distribution method adheres strictly to natural user behavior patterns, ensuring complete safety for your listing.' },
+      { question: 'Can I target specific geographical regions or cities?', answer: 'Yes, we match reviewer profile locations to your exact city, state, or country (USA, UK, Canada, Australia, Europe, etc.).' },
+      { question: 'What happens if a review drops or gets filtered by Google?', answer: 'If any review drops within 30 days, notify our live support on Telegram or WhatsApp and we will re-post a fresh review free of charge.' },
+      { question: 'How many reviews should I order for a new business listing?', answer: 'For new listings, we recommend starting with 5 to 10 reviews spread over 1 to 2 weeks to establish initial trust.' },
+      { question: 'Can you post reviews with high star ratings only?', answer: 'Yes, all standard review packages are 5-star positive ratings unless you explicitly request a custom rating.' },
+      { question: 'What details do I need to provide when ordering?', answer: 'Just provide your Google Maps / Google Business Profile link and any preferred review text or instructions.' }
+    ]
+  },
+
+  // 4. Local Guide Google Review
+  {
+    id: 'google-review-local-guide',
+    slug: 'buy-local-guide-google-reviews',
+    categoryId: 'reputation-management',
+    categoryName: 'Reputation Management',
+    title: 'Google Reviews (Local Guide Level 4+)',
+    variant: 'Local Guide Google Review',
+    price: 15,
+    unit: 'Per Review',
+    isPopular: true,
+    deliveryTime: 'Drip-Fed (1-3 Days)',
+    description: 'High-authority Level 4 to Level 8 Local Guide profiles for maximum search impact, instant sticky placement & rank boosting.',
+    seoTitle: 'Buy Local Guide Google Reviews | Level 4+ High Authority Profiles',
+    seoKeywords: ['buy local guide google reviews', 'level 5 local guide review', 'high authority google review', 'sticky google reviews', 'google maps rank booster'],
+    longDescription: `Supercharge your Google Business Profile visibility with elite Level 4 to Level 8 Local Guide Google Reviews from ReviewSellStore. In Google's local search ranking algorithms, reviews posted by official Local Guide profiles carry up to 10x more ranking weight than standard user accounts. This is because Local Guides possess established contribution scores, verified local check-ins, photo upload records, and active community badges.
+
+Each review is published by a high-ranking Local Guide contributor possessing hundreds or thousands of points, official profile badges, and active browsing footprints across Google Maps and Search. Because of their high trust score, Local Guide reviews index faster, stay sticky longer, bypass Google's strict automated spam filters, and remain prominently displayed at the top of customer review feeds.
+
+When potential buyers see detailed 5-star feedback accompanied by verified Local Guide badges and photo attachments, conversion rates skyrocket. Consumers naturally perceive Local Guide feedback as authoritative, unbiased, and trustworthy, giving your business an immediate competitive edge over rival listings in high-density metropolitan markets.
+
+We support full review customization: supply your own review text, target local SEO keywords (such as "top rated car repair in Dallas" or "best luxury hotel in London"), and attach custom job or venue photos. Alternatively, our expert copywriters will compose rich, engaging testimonials that highlight your key business strengths and naturally weave in high-intent buyer keywords.
+
+Every order includes precise geographic matching across 30+ supported countries (USA, Canada, United Kingdom, Australia, Germany, France, UAE, and more) to ensure reviewer locations align seamlessly with your business footprint.
+
+We deliver all Local Guide reviews via a natural drip-feed posting pace (1 to 3 reviews per day) to ensure complete listing safety and long-term retention. Backed by our lifetime non-drop replacement warranty and 24/7 VIP account management on Telegram (@EgSupport24) and WhatsApp (+1 307-393-9979). Order now with crypto for instant, confidential processing.`,
+    features: [
+      'Level 4 to Level 8 Verified Local Guide Profiles',
+      '10x Ranking Weight in Local Google Search Algorithms',
+      '100% Non-Drop Lifetime Replacement Guarantee',
+      'Native Speaker GEO-Targeted Copywriting Included',
+      'Custom Photo Uploads & Detailed Keywords Supported',
+      'Bypasses Strict Google Review Filters'
+    ],
+    useCases: ['High-Competition Local SEO Pack', 'Premium Brand Authority', 'Overcoming Competitor Reviews', 'Enterprise Local Franchises'],
+    variants: [
+      { id: 'g-lg-1', name: '1 Local Guide Review', quantity: 1, price: 15, unit: 'Review' },
+      { id: 'g-lg-5', name: '5 Local Guide Reviews', quantity: 5, price: 70, unit: 'Reviews', savePercent: 'Save $5' },
+      { id: 'g-lg-10', name: '10 Local Guide Reviews', quantity: 10, price: 130, unit: 'Reviews', savePercent: 'Save $20', isPopular: true },
+      { id: 'g-lg-25', name: '25 Local Guide Reviews', quantity: 25, price: 300, unit: 'Reviews', savePercent: 'Save $75' },
+      { id: 'g-lg-50', name: '50 Local Guide Reviews', quantity: 50, price: 550, unit: 'Reviews', savePercent: 'Save $200' }
+    ],
+    faqs: [
+      { question: 'What Level are the Local Guide accounts used for these reviews?', answer: 'We use verified Level 4, Level 5, Level 6, Level 7, and Level 8 Local Guide profiles with active contribution badges.' },
+      { question: 'Why are Local Guide reviews better than standard reviews?', answer: 'Local Guide profiles hold higher trust scores with Google, causing their reviews to rank higher in customer feeds and pass spam filters more reliably.' },
+      { question: 'Can I request specific keywords or photo uploads?', answer: 'Yes, you can provide target keywords, service descriptions, and custom photo attachments for the Local Guides to include.' },
+      { question: 'Are Local Guide reviews permanent?', answer: 'Yes, Local Guide reviews feature our maximum sticky rate and are backed by a non-drop replacement guarantee.' },
+      { question: 'How many Local Guide reviews can I post per week?', answer: 'We recommend 2 to 5 Local Guide reviews per week depending on your local city population and business category.' },
+      { question: 'Do Local Guide profiles have realistic profile pictures and names?', answer: 'Yes, all Local Guide accounts feature authentic profile pictures, real names, and extensive history of previous reviews.' },
+      { question: 'Will Local Guide reviews help me get into the Google 3-Pack?', answer: 'Yes, high-authority Local Guide feedback is one of the strongest signals for Google Maps 3-Pack ranking.' },
+      { question: 'What GEO countries are supported for Local Guides?', answer: 'We support USA, Canada, UK, Australia, Germany, France, and over 30+ international locations.' },
+      { question: 'How do I submit my business link after purchasing?', answer: 'Simply paste your Google Maps business link into the order details form or send it to our 24/7 Telegram support.' }
+    ]
+  },
+
+  // 5. Standard Trustpilot Review
+  {
+    id: 'trustpilot-review-standard',
+    slug: 'buy-standard-trustpilot-reviews',
+    categoryId: 'reputation-management',
+    categoryName: 'Reputation Management',
+    title: 'Trustpilot Reviews (Standard Organic)',
+    variant: 'Standard Trustpilot Review',
+    price: 10,
+    unit: 'Per Review',
+    deliveryTime: '1 - 2 Days',
+    description: 'Organic Trustpilot review from aged real consumer accounts with realistic activity history & custom review copy.',
+    seoTitle: 'Buy Trustpilot Reviews | 5-Star Organic Trust Score Booster',
+    seoKeywords: ['buy trustpilot reviews', 'trustpilot 5 star review', 'organic trustpilot reviews', 'buy reviews for business', 'trustpilot rating booster'],
+    longDescription: `Build immediate consumer confidence and dramatically increase website conversion rates with organic 5-star Trustpilot Reviews from ReviewSellStore. Trustpilot is globally recognized as the leading independent consumer review platform. When prospective buyers research e-commerce brands, digital products, SaaS tools, or financial services, checking Trustpilot ratings is often their final decision step before making a purchase.
+
+Our standard Trustpilot reviews are posted using aged, real consumer accounts equipped with verified email addresses, authentic browsing cookies, realistic search history, and clean residential IP addresses matching your target customer demographics (USA, UK, Canada, Australia, Europe, etc.). By using established consumer profiles rather than fresh accounts, our reviews pass Trustpilot's automated detection filters smoothly and stay sticky on your company page.
+
+We offer full review customization: you can specify custom review titles, detailed body copy, and target service features. Alternatively, our in-house copywriting specialists will craft authentic, native English buyer testimonials that sound genuine, highlight your product benefits, and naturally incorporate search keywords relevant to your niche.
+
+To preserve your Trustpilot TrustScore and adhere to platform compliance, our proprietary delivery system posts reviews using a gradual drip-feed posting schedule. We space out review submissions over 1 to 3 days or longer depending on your order volume, ensuring that feedback activity appears 100% natural and aligned with organic customer feedback velocity.
+
+Displaying a high 4.5 to 5.0 TrustScore badge on your website header or checkout page reduces cart abandonment, increases buyer trust, and gives you a distinct advantage over competitors. Furthermore, a strong Trustpilot profile protects your brand against occasional negative customer feedback or competitor smear attempts.
+
+Every order comes backed by our 30-day non-drop sticky replacement warranty and 24/7 dedicated customer support via Telegram (@EgSupport24) and WhatsApp (+1 307-393-9979). Pay securely using Bitcoin, Ethereum, USDT, Solana, or major cryptocurrencies for instant order dispatch.`,
+    features: [
+      'Aged Real Consumer Accounts with Clean History',
+      'Custom Review Wording & 5-Star Rating',
+      '100% Sticky Guarantee with Replacement Warranty',
+      'Safe Drip-Feed Submission Spacing',
+      'Protects TrustScore Star Average & Conversion Rate'
+    ],
+    useCases: ['E-Commerce Store Conversions', 'SaaS Platform Trust Building', 'Financial Service Reputation', 'Startup Validation'],
+    variants: [
+      { id: 'tp-std-1', name: '1 Trustpilot Review', quantity: 1, price: 10, unit: 'Review' },
+      { id: 'tp-std-5', name: '5 Trustpilot Reviews', quantity: 5, price: 45, unit: 'Reviews', savePercent: 'Save $5' },
+      { id: 'tp-std-10', name: '10 Trustpilot Reviews', quantity: 10, price: 85, unit: 'Reviews', savePercent: 'Save $15', isPopular: true },
+      { id: 'tp-std-25', name: '25 Trustpilot Reviews', quantity: 25, price: 200, unit: 'Reviews', savePercent: 'Save $50' }
+    ],
+    faqs: [
+      { question: 'How do standard Trustpilot reviews help my store conversion rate?', answer: 'Displaying a high 4.5 to 5.0 TrustScore badge on your website instills confidence and reduces cart abandonment.' },
+      { question: 'Are these Trustpilot reviews sticky?', answer: 'Yes, posted from aged consumer profiles over residential proxies, our reviews remain sticky and visible.' },
+      { question: 'Can I write my own Trustpilot review copy?', answer: 'Yes, you can specify exact review titles and body text or let our professional writers write them for you.' },
+      { question: 'How fast are Trustpilot reviews posted?', answer: 'We space out reviews at 1 to 2 per day to maintain natural velocity and prevent Trustpilot automated flags.' },
+      { question: 'What if a Trustpilot review gets removed?', answer: 'We offer a 30-day non-drop warranty. If any review is removed, we replace it free of charge.' },
+      { question: 'Can I choose reviewer countries (USA, UK, EU)?', answer: 'Yes, you can request reviewers matching your core customer demographics.' },
+      { question: 'Is buying Trustpilot reviews safe for my domain?', answer: 'Yes, because we use aged organic profiles and residential IPs, your domain profile remains completely safe.' },
+      { question: 'What link do I need to supply when ordering?', answer: 'Just provide your official Trustpilot company page URL (e.g. trustpilot.com/review/yourbrand.com).' },
+      { question: 'Do you offer bulk discounts for 25+ Trustpilot reviews?', answer: 'Yes, our variant selector offers up to $50+ savings on bulk packages, plus custom crypto pricing via support.' }
+    ]
+  },
+
+  // 6. Verified Trustpilot Review
+  {
+    id: 'trustpilot-review-verified',
+    slug: 'buy-verified-trustpilot-reviews',
+    categoryId: 'reputation-management',
+    categoryName: 'Reputation Management',
+    title: 'Trustpilot Reviews (Verified Buyer Badge)',
+    variant: 'Verified Trustpilot Review',
+    price: 10,
+    unit: 'Per Review',
+    deliveryTime: '1 - 2 Days',
+    description: 'Verified Buyer Trustpilot review posted with order confirmation receipt tracking for a green Verified badge.',
+    seoTitle: 'Buy Verified Trustpilot Reviews | Green Badge Order Confirmed',
+    seoKeywords: ['buy verified trustpilot reviews', 'verified buyer badge trustpilot', 'sticky trustpilot reviews', 'non drop trustpilot reviews', 'verified trustpilot rating'],
+    longDescription: `Obtain the prestigious green "Verified" buyer badge on your Trustpilot company profile with ReviewSellStore. Verified Trustpilot reviews carry maximum consumer authenticity because they display the prominent green tick icon indicating that the review was submitted in response to an official order confirmation receipt or email invitation link.
+
+Our team processes verified Trustpilot reviews by routing submissions through tracked email invitation links or unique order reference numbers generated for your store domain. This verification method satisfies Trustpilot's internal compliance engine, rendering your reviews virtually immune to automated removal, user flagging, or competitor disputes.
+
+Potential customers actively look for the green "Verified" badge when researching online vendors, crypto platforms, dropshipping stores, and digital agencies. Displaying verified buyer feedback dramatically increases landing page conversion rates, elevates your TrustScore star average, and establishes long-term brand authority in competitive niches.
+
+Every verified review package includes complete copywriting customization: supply your preferred review titles and body text, or allow our native English copywriters to draft realistic purchase testimonials tailored to your product catalog. Reviews are submitted on clean residential proxy IPs with device fingerprinting that matches genuine buyer behavior.
+
+We deliver all verified Trustpilot reviews using a controlled drip-feed schedule (1 to 2 reviews per day) to maintain organic review velocity. This protects your brand's reputation and ensures your Trustpilot rating remains high and stable over time.
+
+All verified Trustpilot reviews come backed by our 30-day non-drop sticky replacement warranty. Should any review be filtered or removed during this period, our support team will re-issue a replacement free of charge. Enjoy 24/7 client support on Telegram (@EgSupport24) and WhatsApp (+1 307-393-9979) with encrypted cryptocurrency payment processing.`,
+    features: [
+      'Green "Verified" Buyer Badge Displayed on Profile',
+      'Order Reference Link & Invitation Tracked',
+      'Zero Flag Risk Guarantee with High Retention',
+      'Custom Native English Review Text Included',
+      '30-Day Non-Drop Replacement Warranty'
+    ],
+    variants: [
+      { id: 'tp-ver-1', name: '1 Verified Trustpilot Review', quantity: 1, price: 10, unit: 'Review' },
+      { id: 'tp-ver-5', name: '5 Verified Trustpilot Reviews', quantity: 5, price: 45, unit: 'Reviews', savePercent: 'Save $5' },
+      { id: 'tp-ver-10', name: '10 Verified Trustpilot Reviews', quantity: 10, price: 85, unit: 'Reviews', savePercent: 'Save $15', isPopular: true },
+      { id: 'tp-ver-25', name: '25 Verified Trustpilot Reviews', quantity: 25, price: 200, unit: 'Reviews', savePercent: 'Save $50' }
+    ],
+    faqs: [
+      { question: 'What does the green "Verified" badge on Trustpilot mean?', answer: 'It proves to visitors that the review was submitted in response to a genuine purchase or email invitation link.' },
+      { question: 'How do you generate verified reviews?', answer: 'We process reviews through tracked email invitation links or unique order reference numbers generated for your domain.' },
+      { question: 'Are verified Trustpilot reviews safer than standard ones?', answer: 'Yes, verified reviews have a near 100% sticky rate because Trustpilot algorithms trust invite-linked submissions.' },
+      { question: 'Can I supply custom review text for verified reviews?', answer: 'Yes, you can provide custom titles and text or let our copywriters craft authentic buyer feedback.' },
+      { question: 'What is the delivery time for verified Trustpilot reviews?', answer: 'Delivery starts within 24 hours and is spaced out over 1 to 3 days depending on your order size.' },
+      { question: 'Can I order verified reviews for a brand new Trustpilot page?', answer: 'Yes, verified reviews are perfect for establishing instant credibility on new brand pages.' },
+      { question: 'Is there a replacement guarantee if a review drops?', answer: 'Yes, all verified reviews come with a 30-day non-drop guarantee with instant free replacements.' },
+      { question: 'Do I need to grant access to my Trustpilot dashboard?', answer: 'No, dashboard access is not required. We handle invitation links externally.' },
+      { question: 'What crypto payment options are supported?', answer: 'We support BTC, ETH, USDT, SOL, LTC, TRX, and DOGE with instant order dispatch.' }
+    ]
+  },
+
+  // 7. Remove Google Bad Review (Recent)
+  {
+    id: 'remove-google-bad-review-recent',
+    slug: 'remove-google-bad-reviews-recent',
+    categoryId: 'reputation-management',
+    categoryName: 'Reputation Management',
+    title: 'Remove Google Bad Review (Under 2 Months)',
+    variant: 'Under 1–2 months (Text/Photo review)',
+    price: 70,
+    unit: 'Per Review Removed',
+    deliveryTime: '3 - 7 Business Days',
+    description: 'Legal & policy compliance dispute to permanently remove fake or negative recent Google reviews.',
+    seoTitle: 'Remove Google Bad Review (Under 2 Months) | Success or Refund',
+    seoKeywords: ['remove google bad reviews', 'delete negative google review', 'google review legal dispute', 'bad review removal service', 'google map review deletion'],
+    longDescription: `Negative or fake Google reviews posted within the last 60 days can severely damage your brand reputation, lower your conversion rate, and drive high-intent customers straight to your local competitors. ReviewSellStore provides a specialized legal dispute and content policy enforcement service designed to permanently remove negative, fake, defamatory, or policy-violating Google reviews from your Google Business Profile (GBP).
+
+We operate strictly within official Google legal compliance frameworks, conflict of interest policy grounds, trade libel statutes, and automated spam filter detection mechanisms. Our legal compliance specialists conduct thorough technical audits on target reviewer account activity, IP creation locations, conflict of interest patterns, and unverified customer claims to construct a high-probability removal dossier.
+
+Restoring your Google Business Profile star rating back to a pristine 4.8–5.0 average immediately rebuilds prospective client confidence, lifts local click-through rates in the Google 3-Pack, and protects your monthly business revenue. Whether the negative review stems from a disgruntled ex-employee, a competitor smear campaign, or an unverified spam profile, our team handles the removal petition with surgical precision.
+
+All removal cases are processed discreetly and anonymously. We interact directly with Google legal compliance officers without modifying your Google Business Profile owner panel or notifying the original reviewer. Your business operations remain completely unaffected throughout the process.
+
+We stand firmly behind our work with a strict 100% Success-or-Refund Guarantee. If our compliance team is unable to permanently delete the target negative review within 3 to 7 business days, you receive a full 100% refund or account replacement credit. Initiate your case today with full privacy via our secure cryptocurrency payment gateway.`,
+    features: [
+      'Official Google Legal & Content Policy Escalation',
+      '100% Success-or-Refund Guarantee Protection',
+      'Permanently Restores Google Business Star Rating',
+      'Completely Confidential & Discreet Legal Process',
+      'Protects Brand Image & Revenue Conversion',
+      'Zero Risk to Your Google Business Profile'
+    ],
+    variants: [
+      { id: 'rem-rec-1', name: 'Remove 1 Bad Review', quantity: 1, price: 70, unit: 'Review Removed' },
+      { id: 'rem-rec-2', name: 'Remove 2 Bad Reviews', quantity: 2, price: 130, unit: 'Reviews Removed', savePercent: 'Save $10' },
+      { id: 'rem-rec-5', name: 'Remove 5 Bad Reviews', quantity: 5, price: 300, unit: 'Reviews Removed', savePercent: 'Save $50' }
+    ],
+    faqs: [
+      { question: 'How do you remove recent negative Google reviews?', answer: 'We submit targeted legal disputes, conflict of interest flags, and policy violation reports directly to Google legal review specialists.' },
+      { question: 'Is review removal guaranteed or do I lose money if it fails?', answer: 'It is 100% guaranteed. If we are unable to permanently delete the negative review, you receive a full 100% refund.' },
+      { question: 'How long does the removal process take?', answer: 'Recent reviews (under 2 months old) are typically deleted within 3 to 7 business days.' },
+      { question: 'Will the reviewer know that I hired a removal service?', answer: 'No, the process is 100% anonymous, confidential, and handled through official policy channels.' },
+      { question: 'What details do I need to supply to initiate removal?', answer: 'Provide your Google Business Profile link, the reviewer name, and the text or date of the negative review.' },
+      { question: 'Can you remove 1-star reviews without any text?', answer: 'Yes, ratings-only 1-star reviews violating Google non-experience or spam guidelines can be disputed.' },
+      { question: 'Will removing bad reviews affect my organic search ranking?', answer: 'Removing bad reviews increases your overall star average, which actually boosts click-through rate and local rankings.' },
+      { question: 'Can a removed review reappear later?', answer: 'No, once Google legal compliance accepts a removal petition, the deletion is permanent.' },
+      { question: 'What payment methods do you accept for bad review removal?', answer: 'We accept all 12 supported cryptocurrencies (BTC, ETH, USDT, SOL, etc.) with encrypted order handling.' }
+    ]
+  },
+
+  // 8. Remove Google Bad Review (Older)
+  {
+    id: 'remove-google-bad-review-older',
+    slug: 'remove-google-bad-reviews-older',
+    categoryId: 'reputation-management',
+    categoryName: 'Reputation Management',
+    title: 'Remove Google Bad Review (Older Than 2 Months)',
+    variant: 'Older than 2 months (Text/Photo review)',
+    price: 70,
+    unit: 'Per Review Removed',
+    deliveryTime: '5 - 10 Business Days',
+    description: 'In-depth audit & policy enforcement to remove older negative reviews affecting your overall star rating.',
+    seoTitle: 'Remove Older Google Bad Reviews (2+ Months) | Permanent Deletion',
+    seoKeywords: ['delete old google reviews', 'remove old bad review google', 'reputation management removal', 'google review legal removal'],
+    longDescription: `Older negative Google reviews often sit prominently at the top of your Google Business Profile feed, continuously turning away high-value clients and pulling down your aggregate rating. ReviewSellStore specializes in deep-audit review removal protocol targeting negative reviews older than 60 days using advanced content policy disputes, competitor attack pattern analysis, and formal legal outreach.
+
+Even if an old negative review has been published on your Google Maps listing for months or years, our legal compliance team audits account activity footprints, outdated service context, and policy updates to build an authoritative removal petition. We challenge unverified user profiles, off-topic rants, employee grievances, and competitor smear campaigns under Google's updated Terms of Service and FTC non-disparagement guidelines.
+
+Permanently deleting aged negative reviews cleans up your local brand reputation and elevates your overall star score back to top-tier status (4.8–5.0 stars). A clean Google profile dramatically improves local conversion rates and ensures that first-time searchers see positive feedback when discovering your business.
+
+Our entire removal protocol is executed behind the scenes with zero administrative burden on your business. We communicate directly with Google compliance officers without making changes to your Google Business Profile dashboard or contacting the reviewer.
+
+Order with total confidence: our service is backed by a 100% Money-Back Guarantee. If our team is unable to successfully remove the targeted older review within 5 to 10 business days, you will receive a full 100% refund. Complete checkout securely with cryptocurrency for immediate case intake.`,
+    features: [
+      'Specialized Long-Term Content & Policy Audit',
+      'High Success Rate Case Protocol for Aged Reviews',
+      '100% Refund or Replacement Credit if Unsuccessful',
+      'Permanently Restores Brand Reputation & Star Average',
+      'Fully Compliant with Federal Trade Libel Laws'
+    ],
+    variants: [
+      { id: 'rem-old-1', name: 'Remove 1 Older Bad Review', quantity: 1, price: 70, unit: 'Review Removed' },
+      { id: 'rem-old-2', name: 'Remove 2 Older Bad Reviews', quantity: 2, price: 130, unit: 'Reviews Removed', savePercent: 'Save $10' },
+      { id: 'rem-old-5', name: 'Remove 5 Older Bad Reviews', quantity: 5, price: 300, unit: 'Reviews Removed', savePercent: 'Save $50' }
+    ],
+    faqs: [
+      { question: 'Can you really remove Google reviews that are over 1 to 2 years old?', answer: 'Yes, our team specializes in auditing aged reviews against updated Google content policies and legal standards.' },
+      { question: 'How long does older review removal take?', answer: 'Older reviews require deeper administrative audits and take approximately 5 to 10 business days.' },
+      { question: 'Is there any risk to my Google Maps listing when removing old reviews?', answer: 'Zero risk. All disputes are handled through legal compliance frameworks without modifying your GBP owner panel.' },
+      { question: 'What happens if Google rejects the initial removal request?', answer: 'We submit secondary appeals using elevated legal grounds. If all appeals fail, you receive a 100% money-back refund.' },
+      { question: 'Can you remove multiple old bad reviews at once?', answer: 'Yes, select your desired removal quantity in the package selector or contact support for bulk cases.' },
+      { question: 'How does removing old bad reviews impact my star rating?', answer: 'Deleting older negative reviews immediately lifts your average star rating back up to 4.8–5.0 stars.' },
+      { question: 'Do I need admin access to my Google Business account?', answer: 'No admin access is necessary; our compliance team manages the process externally.' },
+      { question: 'Are defamation and fake competitor reviews eligible for deletion?', answer: 'Yes, fake reviews from disgruntled ex-employees or competitors are primary targets for removal.' },
+      { question: 'How do I start a removal case?', answer: 'Select your package, paste your Google Business link, specify the target review, and complete checkout.' }
+    ]
+  },
+
+  // 9. USA Phone Verified Gmail Accounts
+  {
+    id: 'usa-gmail-accounts',
+    slug: 'buy-usa-pva-gmail-accounts',
+    categoryId: 'gmail-accounts',
+    categoryName: 'Gmail Accounts',
+    title: 'USA Phone Verified Gmail Accounts (PVA)',
+    variant: 'USA IP & Carrier SIM Verified',
+    price: 130,
+    unit: '50 Accounts Package',
+    isPopular: true,
+    deliveryTime: 'Instant Dispatch',
+    description: 'Fresh & aged USA IP registered phone-verified Gmail accounts created with real USA carrier SIM cards.',
+    seoTitle: 'Buy USA Phone Verified Gmail Accounts (PVA) | Bulk Instant Delivery',
+    seoKeywords: ['buy usa gmail accounts', 'buy pva gmail', 'phone verified gmail', 'buy bulk gmail accounts', 'usa ip gmail', 'fresh gmail list'],
+    longDescription: `Need reliable, high-deliverability USA Phone Verified Gmail (PVA) accounts for cold email outreach, affiliate marketing campaigns, social media registrations, or software development? ReviewSellStore supplies premium USA IP registered Gmail accounts created using physical USA mobile carrier SIM cards (T-Mobile, AT&T, Verizon) over static, high-purity residential proxy IP addresses.
+
+Each account is created in an isolated browser profile on a static US residential IP address with unique device fingerprinting, canvas noise, and browser headers. This rigorous setup prevents cross-linking between accounts and equips your outreach campaigns with maximum email inbox delivery. Emails dispatched via SMTP or cold email automation tools (such as Lemlist, Instantly, Smartlead, Mailshake, or Woodpecker) land directly in recipient primary inboxes rather than spam or promotions folders.
+
+Unlike low-quality accounts generated with temporary virtual VoIP numbers, our USA PVA Gmail accounts are verified using physical US mobile SIM cards. This ensures long-term operational stability, resistance against phone verification loops, and the ability to handle multi-channel marketing workflows seamlessly.
+
+Every delivery package is delivered in an organized CSV/TXT format containing full administrative credentials: Email address, Password, Recovery Email address with full inbox access, Creation IP Location, and JSON Browser Cookie files. This enables direct import into antidetect browsers (AdsPower, Multilogin, Dolphin, GoLogin) for immediate multi-account management.
+
+Our USA PVA Gmail accounts are versatile assets for digital agencies, media buyers, software developers, and email marketers. Whether you are scaling B2B cold outreach campaigns, setting up Google Ads accounts, registering developer profiles on Google Cloud, or managing multiple social media channels, our accounts provide the clean baseline required for success.
+
+All purchases are protected by our 100% 48-hour free replacement guarantee for any initial login issue or disabled account error. Our dedicated 24/7 technical support team on Telegram (@EgSupport24) and WhatsApp (+1 307-393-9979) is available around the clock to guide you on proxy setups and cookie management. Pay securely using any of our 12 accepted cryptocurrency options for instant automated dispatch.`,
+    features: [
+      '100% USA Static Residential IP Creation',
+      'Unique Real Mobile SIM Verification (No Virtual VoIP)',
+      'Recovery Email Included with Full Mailbox Access',
+      'Instant TXT/CSV Credentials File Download',
+      '48-Hour Login Warranty & Replacement Protection',
+      'Compatible with GSA, Jarvee, Instantly, and Cold Email Tools'
+    ],
+    useCases: ['Cold Email Marketing Campaigns', 'Social Media Account Registrations', 'Google Service Registrations', 'App Testing & Development'],
+    variants: [
+      { id: 'usa-g-2', name: '2 USA Gmail Accounts', quantity: 2, price: 6, unit: 'Accounts' },
+      { id: 'usa-g-5', name: '5 USA Gmail Accounts', quantity: 5, price: 15, unit: 'Accounts' },
+      { id: 'usa-g-20', name: '20 USA Gmail Accounts', quantity: 20, price: 55, unit: 'Accounts', savePercent: 'Save $5' },
+      { id: 'usa-g-50', name: '50 USA Gmail Accounts', quantity: 50, price: 130, unit: 'Accounts', isPopular: true, savePercent: 'Save $20' },
+      { id: 'usa-g-100', name: '100 USA Gmail Accounts', quantity: 100, price: 220, unit: 'Accounts', savePercent: 'Save $80' },
+      { id: 'usa-g-500', name: '500 USA Gmail Accounts', quantity: 500, price: 950, unit: 'Accounts', savePercent: 'Save $350' }
+    ],
+    faqs: [
+      { question: 'What does USA PVA Gmail mean?', answer: 'It means the Gmail accounts were created on USA residential IP addresses and phone-verified using real US mobile SIM cards.' },
+      { question: 'What file format will I receive my accounts in?', answer: 'Delivery is formatted in standard CSV or TXT format (Email : Password : RecoveryEmail).' },
+      { question: 'Are recovery email credentials provided?', answer: 'Yes, full login details for the recovery email address are included so you never get locked out.' },
+      { question: 'Are these Gmail accounts created with real SIM cards or VoIP numbers?', answer: 'All USA PVA accounts are verified using physical US carrier SIM cards for long-term stability.' },
+      { question: 'Can I use these Gmail accounts in cold email tools like Lemlist or Instantly?', answer: 'Yes, these accounts are ideal for cold email outreach, SMTP setup, and email marketing platforms.' },
+      { question: 'What is your login warranty period?', answer: 'We provide a 48-hour 100% replacement guarantee if you encounter any initial password or disabled account error.' },
+      { question: 'How quickly will I receive my order after crypto payment?', answer: 'Credentials are dispatched instantly or within 10 to 30 minutes following crypto network confirmations.' },
+      { question: 'Should I use USA proxies when logging into these accounts?', answer: 'Yes, using clean USA residential proxies or a US VPN ensures smooth login without verification prompts.' },
+      { question: 'Do you offer bulk discounts for 100+ or 500+ Gmail orders?', answer: 'Yes, our bulk options save up to $350+ on 500 accounts, with additional discounts for wholesale customers.' }
+    ]
+  },
+
+  // 10. Aged Mix Country Gmail Accounts
+  {
+    id: 'aged-mix-gmail-accounts',
+    slug: 'buy-aged-mix-country-gmail-accounts',
+    categoryId: 'gmail-accounts',
+    categoryName: 'Gmail Accounts',
+    title: 'Aged Mix Country Gmail Accounts',
+    variant: '1 to 5+ Years Aged',
+    price: 95,
+    unit: '50 Accounts Package',
+    deliveryTime: 'Instant Dispatch',
+    description: 'Aged 1 to 5+ year old Gmail accounts from mixed clean GEO locations. Maximum trust score for bulk marketing.',
+    seoTitle: 'Buy Aged Mix Country Gmail Accounts | 1-5+ Years Old Bulk List',
+    seoKeywords: ['buy aged gmail accounts', 'old gmail accounts bulk', 'aged mix country gmail', 'buy cheap gmail', 'aged pva gmail'],
+    longDescription: `Aged Gmail accounts are essential assets when email deliverability, high sending volume, and long-term account survival are critical to your digital operations. ReviewSellStore's Aged Mix Country Gmail accounts were registered between 1 to 5+ years ago across clean, high-purity residential proxy pools in major international regions (USA, UK, Canada, Germany, France, Australia, and tier-1 locations).
+
+Because Google's security algorithms naturally accord significantly higher trust scores to older accounts with established history, these aged Gmails effortlessly bypass new-account sending restrictions. Emails sent from these aged accounts achieve superior inbox placement, avoiding automatic spam folder filtering during high-volume cold outreach and marketing campaigns.
+
+Aged accounts carry pre-conditioned Google TrustScores, making them ideal for creating long-lasting YouTube channels, configuring Google Cloud developer profiles, managing social media management platforms (Jarvee, Multilogin, AdsPower), running affiliate marketing campaigns, or conducting automated web scraping workflows.
+
+Each account is fully phone-verified (PVA) using physical mobile carrier SIMs and supplied with complete administrative access. You receive full credentials: Primary Email login, Password, Recovery Email address with dedicated mailbox access, Registration Year, and JSON Browser Cookie files.
+
+After delivery, you hold full administrative ownership to update passwords, recovery email addresses, and security settings. Every batch is thoroughly tested against automated security checkpoints prior to delivery.
+
+Backed by our 48-hour 100% free replacement warranty for any initial credential issues or login errors. Our technical team on Telegram (@EgSupport24) and WhatsApp (+1 307-393-9979) is available 24/7 to support your setup. Purchase bulk packages with zero transaction markups using Bitcoin, Ethereum, USDT, Solana, or major cryptocurrencies.`,
+    features: [
+      'Aged 1 to 5+ Years Established Account History',
+      'Clean Standing Across Mixed Global GEO Locations',
+      'Higher Primary Email Inbox Placement Rate',
+      'Recovery Email Details & Password Included',
+      '48-Hour Free Replacement Warranty Included',
+      'Ideal for Mass Marketing & Automation Software'
+    ],
+    variants: [
+      { id: 'mix-g-2', name: '2 Aged Mix Accounts', quantity: 2, price: 5, unit: 'Accounts' },
+      { id: 'mix-g-5', name: '5 Aged Mix Accounts', quantity: 5, price: 10, unit: 'Accounts' },
+      { id: 'mix-g-20', name: '20 Aged Mix Accounts', quantity: 20, price: 40, unit: 'Accounts' },
+      { id: 'mix-g-50', name: '50 Aged Mix Accounts', quantity: 50, price: 95, unit: 'Accounts', isPopular: true, savePercent: 'Save $30' },
+      { id: 'mix-g-100', name: '100 Aged Mix Accounts', quantity: 100, price: 180, unit: 'Accounts', savePercent: 'Save $70' }
+    ],
+    faqs: [
+      { question: 'Why are aged Gmail accounts better than fresh ones?', answer: 'Aged Gmails carry higher Google trust scores, enabling better email inboxing rates and immunity to automatic spam blocks.' },
+      { question: 'How old are these aged Gmail accounts?', answer: 'Accounts range from 1 to 5+ years of age since original registration date.' },
+      { question: 'What countries are included in the Mix GEO list?', answer: 'Locations include USA, UK, Canada, Germany, France, Brazil, India, and other clean global IP pools.' },
+      { question: 'Can I change the password and recovery details?', answer: 'Yes, once delivered, you can update passwords, recovery email addresses, and security settings.' },
+      { question: 'Do these accounts come with phone verification enabled?', answer: 'Yes, all aged accounts are phone verified (PVA) and delivered with full recovery email credentials.' },
+      { question: 'What is the replacement guarantee for aged Gmails?', answer: 'We offer a 48-hour 100% replacement guarantee for any initial login issues.' },
+      { question: 'Can I use aged Gmail accounts for YouTube channel creation?', answer: 'Yes, aged accounts are excellent for establishing long-lasting YouTube channels or Google Cloud accounts.' },
+      { question: 'How are credentials formatted in the delivery file?', answer: 'Delivered in clean TXT/CSV format (Email : Password : RecoveryEmail).' },
+      { question: 'Which cryptocurrencies are supported for purchase?', answer: 'Pay securely using BTC, ETH, USDT, SOL, LTC, TRX, DOGE, or BNB.' }
+    ]
+  },
+
+  // 11. Aged Gmail Accounts for Google Ads
+  {
+    id: 'aged-ads-gmail-accounts',
+    slug: 'buy-aged-gmail-accounts-for-google-ads',
+    categoryId: 'gmail-accounts',
+    categoryName: 'Gmail Accounts',
+    title: 'Aged Gmail Accounts for Google Ads',
+    variant: 'Ads Warmed & Threshold Ready',
+    price: 70,
+    unit: '20 Accounts Package',
+    isPopular: true,
+    deliveryTime: 'Instant Dispatch',
+    description: 'Specially warmed up aged Gmail accounts with active browsing history and Google Ads payment readiness.',
+    seoTitle: 'Buy Aged Gmail Accounts for Google Ads | Threshold Warmed Up',
+    seoKeywords: ['buy google ads gmail accounts', 'aged gmail for google ads', 'google ads threshold gmail', 'warmed up gmail accounts', 'google ads ready gmail'],
+    longDescription: `Launching and scaling Google Ads pay-per-click (PPC) campaigns requires Gmail accounts with high trust factors to prevent immediate billing suspensions, policy holds, and "suspicious payment activity" account suspensions. ReviewSellStore's Google Ads Ready Gmail accounts are specifically pre-conditioned and warmed up with real human activity footprints prior to delivery.
+
+Each account features pre-established YouTube watch histories, organic Google Search queries, location history logs, and realistic web browsing cookies. This organic activity establishes a legitimate user profile within Google's risk assessment engine, enabling high tolerance when attaching payment methods, linking credit cards or virtual payment cards (VCC), and setting up initial ad campaign billing thresholds.
+
+Our Google Ads ready accounts are ideal for media buyers, affiliate marketers, PPC agencies, and e-commerce managers who need to create or join Google Ads Manager (MCC) hubs, test new advertising angles, launch search or display campaigns, and manage multi-account ad operations without triggering automated security flags.
+
+Every delivery includes complete account details along with exported JSON browser cookies and user-agent profile strings. Importing these cookies directly into antidetect browsers (such as AdsPower, Multilogin, Dolphin Anty, or GoLogin) paired with static residential IP proxies matching the account creation region ensures flawless, checkpoint-free session restoration.
+
+You receive full access credentials: Email Address, Password, Recovery Email address login credentials, JSON Cookie File, and User-Agent Specs. All accounts are 100% phone verified (PVA) using physical mobile carrier SIMs.
+
+Backed by our 48-hour login replacement guarantee for any pre-campaign login issue. Should you need advice on antidetect browser setup or proxy pairing, our dedicated 24/7 technical team on Telegram (@EgSupport24) and WhatsApp (+1 307-393-9979) is ready to help. Complete your order with cryptocurrency for instant, encrypted credential delivery.`,
+    features: [
+      'Pre-Warmed with Authentic Cookies, Search & YouTube History',
+      'High Tolerance for Payment Method Linking & Billing Setup',
+      'Includes Full Browser Cookies (JSON) & User-Agent Specs',
+      'Phone Verified & Email Recovery Access Included',
+      '48-Hour Instant Replacement Guarantee'
+    ],
+    variants: [
+      { id: 'ads-g-1', name: '1 Ads Ready Gmail', quantity: 1, price: 5, unit: 'Account' },
+      { id: 'ads-g-3', name: '3 Ads Ready Gmails', quantity: 3, price: 15, unit: 'Accounts' },
+      { id: 'ads-g-10', name: '10 Ads Ready Gmails', quantity: 10, price: 40, unit: 'Accounts' },
+      { id: 'ads-g-20', name: '20 Ads Ready Gmails', quantity: 20, price: 70, unit: 'Accounts', isPopular: true, savePercent: 'Save $30' },
+      { id: 'ads-g-50', name: '50 Ads Ready Gmails', quantity: 50, price: 180, unit: 'Accounts', savePercent: 'Save $70' }
+    ],
+    faqs: [
+      { question: 'What makes these Gmail accounts suitable for Google Ads?', answer: 'They are pre-conditioned with active browsing cookies, search history, and device footprints to pass Google automated risk checks.' },
+      { question: 'Are these accounts phone verified?', answer: 'Yes, all Google Ads ready accounts are 100% phone verified (PVA).' },
+      { question: 'Do you deliver browser cookies with the account?', answer: 'Yes, JSON cookies and user-agent details are included for importing into antidetect browsers.' },
+      { question: 'Can I link my credit card or VCC to these accounts?', answer: 'Yes, these accounts have a high payment method tolerance for virtual credit cards (VCC) and debit cards.' },
+      { question: 'What is the replacement guarantee if an account suspended on login?', answer: 'We replace any account that suffers a pre-campaign login issue within 48 hours of purchase.' },
+      { question: 'Should I use antidetect browsers like Multilogin or AdsPower?', answer: 'Yes, we recommend using antidetect browsers along with static residential proxies matching the account region.' },
+      { question: 'Can I create Google Ads Manager (MCC) accounts?', answer: 'Yes, these warmed aged accounts are ideal for creating or joining MCC manager hubs.' },
+      { question: 'How quickly will I receive my credentials?', answer: 'Credentials and cookies are delivered instantly after order confirmation.' },
+      { question: 'What payment methods do you accept?', answer: 'We accept Bitcoin, Ethereum, USDT, Solana, and major cryptocurrencies.' }
+    ]
+  },
+
+  // 12. Aged Gmail Accounts for Reviews
+  {
+    id: 'aged-review-gmail-accounts',
+    slug: 'buy-aged-gmail-accounts-for-reviews',
+    categoryId: 'gmail-accounts',
+    categoryName: 'Gmail Accounts',
+    title: 'Aged Gmail Accounts for Posting Reviews',
+    variant: 'High Authority Review Profiles',
+    price: 130,
+    unit: '50 Accounts Package',
+    deliveryTime: 'Instant Dispatch',
+    description: 'High-authority aged Gmail profiles created to post Google, Trustpilot, and Yelp reviews without filtering.',
+    seoTitle: 'Buy Aged Gmail Accounts for Posting Reviews | Non-Filter Profiles',
+    seoKeywords: ['buy gmail for google reviews', 'review posting gmail accounts', 'high trust gmail', 'sticky review gmail', 'aged review accounts'],
+    longDescription: `Posting online customer reviews that remain permanently published requires Gmail accounts with realistic activity footprints, aged profile histories, and verified location check-ins. ReviewSellStore supplies high-authority aged Gmail accounts specifically conditioned to bypass review filter algorithms across Google Maps, Trustpilot, Yelp, Facebook, Tripadvisor, and Sitejabber.
+
+Every account in this package is aged 6+ months and features a realistic profile avatar, full recovery mailbox access, and pre-warmed Google Maps browsing activity. Because Google's automated review filter analyzes reviewer account age, search history, and geographic location logs, posting reviews from our aged accounts ensures your submitted reviews stay sticky and publicly visible to prospective customers.
+
+Our review-posting Gmail accounts are matched to specific geographic target regions (USA, United Kingdom, Canada, Australia, Europe, etc.). Each profile possesses realistic browsing histories and local search queries relevant to its target region, giving your reviews maximum credibility and longevity.
+
+Delivered in organized TXT/CSV formats containing complete administrative details: Email Address, Password, Recovery Email Address with full mailbox access, JSON Cookie Files, and User-Agent Profile Strings. You have total freedom to import these cookies into antidetect browsers for seamless multi-account management.
+
+Ideal for reputation management agencies, local SEO consultants, small business owners, and digital marketers seeking to build authentic social proof, improve Google 3-Pack rankings, or counteract negative competitor feedback.
+
+Backed by our 48-hour 100% free login replacement guarantee. Our customer support specialists on Telegram (@EgSupport24) and WhatsApp (+1 307-393-9979) are available 24/7 to assist with bulk orders or setup inquiries. Pay conveniently with any of our 12 supported cryptocurrency payment channels.`,
+    features: [
+      'Optimized to Bypass Automated Review Filter Algorithms',
+      'Aged History with Clean Google Maps & Local Activity Log',
+      'Full Email Login, Password & Recovery Details Included',
+      'Includes Realistic Avatars & User-Agent Strings',
+      '48-Hour Free Replacement Guarantee'
+    ],
+    variants: [
+      { id: 'rev-g-2', name: '2 Review Posting Gmails', quantity: 2, price: 6, unit: 'Accounts' },
+      { id: 'rev-g-5', name: '5 Review Posting Gmails', quantity: 5, price: 15, unit: 'Accounts' },
+      { id: 'rev-g-20', name: '20 Review Posting Gmails', quantity: 20, price: 55, unit: 'Accounts' },
+      { id: 'rev-g-50', name: '50 Review Posting Gmails', quantity: 50, price: 130, unit: 'Accounts', isPopular: true, savePercent: 'Save $20' },
+      { id: 'rev-g-100', name: '100 Review Posting Gmails', quantity: 100, price: 220, unit: 'Accounts', savePercent: 'Save $80' }
+    ],
+    faqs: [
+      { question: 'Why are these Gmail accounts specifically designed for review posting?', answer: 'They carry aged local search history and cookies, preventing Google from filtering reviews as spam.' },
+      { question: 'Can I use these accounts on platforms other than Google Maps?', answer: 'Yes, they work perfectly on Trustpilot, Yelp, Facebook, Tripadvisor, and Sitejabber.' },
+      { question: 'What precautions should I take when posting reviews?', answer: 'Use clean residential IPs matching the target business city and space out reviews naturally.' },
+      { question: 'Are profile pictures and names pre-populated?', answer: 'Yes, accounts feature realistic profile photos and natural names.' },
+      { question: 'What is the replacement guarantee for review posting accounts?', answer: 'We offer a 100% replacement warranty for any initial login issues within 48 hours.' },
+      { question: 'Do these accounts come with JSON cookies?', answer: 'Yes, browser cookie files are included for quick import into antidetect browsers.' },
+      { question: 'Can I change the account name and password after purchase?', answer: 'Yes, you have full ownership to customize security and profile settings.' },
+      { question: 'How are the credentials delivered?', answer: 'Delivered instantly in CSV or TXT format (Email : Password : RecoveryEmail).' },
+      { question: 'Do you offer bulk support for reputation agencies?', answer: 'Yes, reputation management agencies can purchase bulk packages with VIP Telegram support.' }
+    ]
+  },
+
+  // 13. New Fresh Gmail Accounts
+  {
+    id: 'new-fresh-gmail-accounts',
+    slug: 'buy-new-fresh-gmail-accounts',
+    categoryId: 'gmail-accounts',
+    categoryName: 'Gmail Accounts',
+    title: 'New Fresh Bulk Gmail Accounts',
+    variant: 'Fresh Phone Verified (PVA)',
+    price: 45,
+    unit: '50 Accounts Package',
+    deliveryTime: 'Instant Dispatch',
+    description: 'Freshly created phone-verified Gmail accounts for quick signups, marketing outreach, and software testing.',
+    seoTitle: 'Buy Fresh Gmail Accounts Bulk | Cheap PVA Gmail List',
+    seoKeywords: ['buy fresh gmail accounts', 'new gmail accounts bulk', 'cheap gmail accounts', 'pva gmail list', 'fresh bulk gmail'],
+    longDescription: `Looking for affordable, bulk fresh Gmail accounts for software developer testing, automated application signups, sandbox environments, or mass email testing? ReviewSellStore provides freshly registered phone-verified (PVA) Gmail accounts created on clean residential proxy IP networks.
+
+Our fresh Gmail accounts are registered using real mobile carrier SIM cards, making them resilient against initial signup security locks, reCAPTCHA loops, and phone verification prompts. They are ideal for developers requiring isolated email accounts for app QA, API testing, scraping workflows, or basic web platform registrations.
+
+Each account is delivered with complete credentials in an easy-to-parse TXT/CSV format: Email Address, Password, Recovery Email Address with full inbox access, and Creation SIM Verification Log. This clean format allows seamless import into automated bots, software tools, or spreadsheets.
+
+While fresh Gmail accounts are not recommended for immediate high-volume cold email outreach (which requires aged accounts), they offer the most cost-effective solution for short-term signup tasks, social media verification, and digital utility testing.
+
+Every batch undergoes automated verification prior to dispatch to ensure 100% active standing upon delivery. Backed by our 48-hour login replacement guarantee for any initial password error or disabled account.
+
+Enjoy direct wholesale supplier pricing without middleman markups. Order bulk packages with instant crypto delivery using Bitcoin, Ethereum, USDT, Solana, or major cryptocurrencies. Contact our 24/7 support team on Telegram (@EgSupport24) or WhatsApp (+1 307-393-9979) for custom volume pricing.`,
+    features: [
+      'Freshly Created & Real Mobile SIM Verified',
+      'Includes Recovery Email Credentials with Full Mailbox Access',
+      'Instant TXT/CSV File Download for Easy Automation',
+      'Lowest Wholesale Supplier Pricing in Market',
+      '48-Hour Free Replacement Guarantee'
+    ],
+    variants: [
+      { id: 'new-g-2', name: '2 Fresh Gmail Accounts', quantity: 2, price: 3, unit: 'Accounts' },
+      { id: 'new-g-5', name: '5 Fresh Gmail Accounts', quantity: 5, price: 5, unit: 'Accounts' },
+      { id: 'new-g-20', name: '20 Fresh Gmail Accounts', quantity: 20, price: 20, unit: 'Accounts' },
+      { id: 'new-g-50', name: '50 Fresh Gmail Accounts', quantity: 50, price: 45, unit: 'Accounts', isPopular: true, savePercent: 'Save $15' },
+      { id: 'new-g-100', name: '100 Fresh Gmail Accounts', quantity: 100, price: 80, unit: 'Accounts', savePercent: 'Save $50' }
+    ],
+    faqs: [
+      { question: 'What is the difference between fresh and aged Gmail accounts?', answer: 'Fresh Gmail accounts were registered recently, whereas aged accounts were registered 1 to 5+ years ago.' },
+      { question: 'Are these fresh Gmail accounts phone verified (PVA)?', answer: 'Yes, all fresh accounts are verified with real mobile carrier SIM numbers.' },
+      { question: 'What is the replacement guarantee for fresh accounts?', answer: 'We offer a 100% replacement guarantee if any account fails initial login within 48 hours.' },
+      { question: 'Can I use fresh Gmails for high-volume email outreach?', answer: 'For cold email campaigns, we recommend warming them up for 1–2 weeks or opting for our Aged Gmail packages.' },
+      { question: 'What format are the credentials delivered in?', answer: 'Credentials are formatted in standard CSV or TXT format (Email : Password : RecoveryEmail).' },
+      { question: 'Are recovery email passwords included?', answer: 'Yes, complete login details for the recovery email mailbox are provided.' },
+      { question: 'How quickly are orders delivered?', answer: 'Orders are dispatched instantly or within 10 to 15 minutes of crypto payment.' },
+      { question: 'Can I change passwords and recovery details?', answer: 'Yes, you have full administrative rights to update credentials.' },
+      { question: 'What crypto payment methods are available?', answer: 'We accept BTC, ETH, USDT, SOL, LTC, TRX, DOGE, and 5+ additional crypto coins.' }
+    ]
+  },
+
+  // 14. Google Voice Accounts
+  {
+    id: 'google-voice-accounts',
+    slug: 'buy-google-voice-accounts',
+    categoryId: 'virtual-number-services',
+    categoryName: 'Virtual Number Services',
+    title: 'Google Voice Accounts with USA Number',
+    variant: 'Real USA Phone Line',
+    price: 10,
+    unit: 'Per Account',
+    isPopular: true,
+    deliveryTime: '5 - 15 Mins',
+    description: 'Real USA Google Voice line attached to a phone-verified Gmail. Full SMS & calling capability for business communications.',
+    seoTitle: 'Buy Google Voice Accounts | USA Virtual Phone Number & SMS',
+    seoKeywords: ['buy google voice accounts', 'buy gv account', 'usa google voice number', 'virtual phone number usa', 'google voice account bulk'],
+    longDescription: `Get a permanent USA virtual phone number with Google Voice attached to a fully phone-verified Gmail account from ReviewSellStore. Google Voice provides free unlimited voice calling and text messaging to all US and Canadian phone numbers, making these accounts indispensable tools for international remote businesses, freelancers, marketers, and e-commerce store owners.
+
+Google Voice numbers function as dedicated communication channels for registering WhatsApp Business accounts, activating Telegram channels, receiving two-factor authentication (2FA) OTP SMS codes from banks and platforms, and establishing a professional US phone presence for customer support lines.
+
+Each Google Voice account is created on a clean US residential proxy IP address using physical US mobile carrier SIM cards (not temporary VoIP numbers). This real carrier phone verification ensures long-term line stability, resistance against number reclamation, and seamless performance across Google Voice web dashboards and mobile applications (iOS and Android).
+
+Google Voice supports rich communication features: custom voicemail greeting recordings, incoming call forwarding to secondary phone numbers, SMS text notifications, transcriptions, and desktop calling integrations. To keep your Google Voice number active indefinitely, simply send one free text message or place one free outgoing call every 30 days.
+
+Every order package is delivered with complete access credentials: Gmail Address, Gmail Password, Recovery Email address credentials with full mailbox access, and assigned USA Google Voice Phone Number details.
+
+You receive complete administrative control to update passwords, recovery email details, and security keys. Backed by our 100% 48-hour free replacement guarantee for any initial login or line issue.
+
+Enjoy instant automated dispatch following crypto payment confirmation. Pay with Bitcoin, Ethereum, USDT, Solana, or any of our 12 accepted cryptocurrency channels. Contact our 24/7 technical support on Telegram (@EgSupport24) or WhatsApp (+1 307-393-9979) for custom bulk order inquiries.`,
+    features: [
+      'Real USA Carrier Phone Number Attached to Account',
+      'Unlimited US & Canada Incoming & Outgoing Calls & SMS',
+      'Full Gmail Account Credentials & Recovery Email Delivered',
+      'Ideal for WhatsApp, Telegram & OTP Code Verification',
+      '100% Non-Drop Lifetime Line Guarantee & Support'
+    ],
+    useCases: ['WhatsApp Business Account Creation', 'SMS Verification for Bank/Apps', 'E-Commerce Phone Support Line', 'Remote Freelancer Calling'],
+    variants: [
+      { id: 'gv-1', name: '1 Google Voice Account', quantity: 1, price: 10, unit: 'Account', isPopular: true },
+      { id: 'gv-3', name: '3 Google Voice Accounts', quantity: 3, price: 28, unit: 'Accounts', savePercent: 'Save $2' },
+      { id: 'gv-5', name: '5 Google Voice Accounts', quantity: 5, price: 45, unit: 'Accounts', savePercent: 'Save $5' },
+      { id: 'gv-10', name: '10 Google Voice Accounts', quantity: 10, price: 85, unit: 'Accounts', savePercent: 'Save $15' },
+      { id: 'gv-25', name: '25 Google Voice Accounts', quantity: 25, price: 200, unit: 'Accounts', savePercent: 'Save $50' }
+    ],
+    faqs: [
+      { question: 'What details are delivered with a Google Voice account purchase?', answer: 'You will receive the Gmail address, password, recovery email, and assigned USA Google Voice phone number.' },
+      { question: 'Can I make unlimited free calls to US and Canada numbers?', answer: 'Yes, Google Voice allows free voice calling and text messaging to all US and CA phone numbers via web or mobile app.' },
+      { question: 'Can I use this Google Voice number to activate WhatsApp Business?', answer: 'Yes! Google Voice numbers receive WhatsApp, Telegram, Tinder, and Craigslist OTP verification SMS codes.' },
+      { question: 'How do I log in to Google Voice outside the United States?', answer: 'Use a clean US VPN or residential proxy when accessing voice.google.com or the mobile app.' },
+      { question: 'Will the Google Voice number expire if inactive?', answer: 'To keep the number active permanently, simply send 1 free SMS or make 1 free call every 30 days.' },
+      { question: 'Is there a warranty if the line is reclaimable or locked?', answer: 'We offer a 100% 48-hour replacement warranty if there is any initial login issue.' },
+      { question: 'Can I transfer the Google Voice number to my personal Gmail account?', answer: 'Yes, Google Voice allows free number transfers between Gmail accounts in settings.' },
+      { question: 'Do you offer bulk discounts for 10+ or 25+ Google Voice accounts?', answer: 'Yes, our bulk options save up to $50 on 25 accounts, with custom pricing via Telegram support.' },
+      { question: 'What crypto payment methods are accepted for Google Voice?', answer: 'Pay using BTC, ETH, USDT (TRC20/ERC20/BEP20), SOL, LTC, or BNB.' }
+    ]
+  },
+
+  // 15. TextNow Accounts
+  {
+    id: 'textnow-accounts',
+    slug: 'buy-textnow-accounts',
+    categoryId: 'virtual-number-services',
+    categoryName: 'Virtual Number Services',
+    title: 'TextNow Verified Accounts',
+    variant: 'US/CA Virtual Number',
+    price: 7,
+    unit: 'Per Account',
+    deliveryTime: 'Instant Dispatch',
+    description: 'Active TextNow accounts with US/CA virtual phone numbers for instant OTP verification and business texting.',
+    seoTitle: 'Buy TextNow Accounts | US/CA Virtual Number for SMS',
+    seoKeywords: ['buy textnow accounts', 'textnow virtual line', 'textnow phone number', 'buy sms verification accounts', 'textnow account bulk'],
+    longDescription: `TextNow offers instant virtual phone lines across North America for SMS messaging, voice calls, and online verification. ReviewSellStore delivers fully verified, active TextNow accounts equipped with US/CA virtual phone numbers ready for immediate OTP SMS code reception, social media account activations, and online platform signups.
+
+TextNow accounts provide a cost-effective virtual line solution for digital marketers, remote freelancers, and developers who need secondary SMS verification channels without paying monthly mobile carrier fees.
+
+Our TextNow accounts are registered using clean US residential proxy IP addresses to ensure account longevity and prevent initial location mismatch flags. They work smoothly on web browsers as well as TextNow iOS and Android applications.
+
+Delivered in an organized, easy-to-use text format containing complete login credentials: Username or Email address, Password, and assigned active US/CA Virtual Phone Number.
+
+After delivery, you hold complete administrative rights to change account passwords and update profile preferences. Every account is verified for active standing prior to dispatch.
+
+Backed by our 48-hour 100% free replacement guarantee for any initial login or credential issue. Pay securely using Bitcoin, Ethereum, USDT, Solana, or major cryptocurrencies. Support is available 24/7 on Telegram (@EgSupport24) and WhatsApp (+1 307-393-9979).`,
+    features: [
+      'Active US or Canadian Virtual Line Assigned',
+      'Instant OTP SMS Code Verification Forwarding',
+      'Full Email & TextNow Password Credentials Delivered',
+      '48-Hour Replacement Guarantee Included'
+    ],
+    variants: [
+      { id: 'tn-1', name: '1 TextNow Account', quantity: 1, price: 7, unit: 'Account' },
+      { id: 'tn-3', name: '3 TextNow Accounts', quantity: 3, price: 19, unit: 'Accounts', savePercent: 'Save $2' },
+      { id: 'tn-5', name: '5 TextNow Accounts', quantity: 5, price: 30, unit: 'Accounts', savePercent: 'Save $5' },
+      { id: 'tn-10', name: '10 TextNow Accounts', quantity: 10, price: 55, unit: 'Accounts', savePercent: 'Save $15' }
+    ],
+    faqs: [
+      { question: 'What is included in a TextNow account delivery package?', answer: 'You receive the TextNow login username/email, password, and active assigned virtual phone number.' },
+      { question: 'Can TextNow accounts receive OTP verification codes?', answer: 'Yes, TextNow lines receive SMS codes for various online services, social apps, and websites.' },
+      { question: 'Should I use a US proxy or VPN when logging into TextNow?', answer: 'Yes, connecting through a US IP address ensures seamless session continuation.' },
+      { question: 'How long does delivery take after ordering?', answer: 'Credentials are generated and dispatched instantly after crypto checkout.' },
+      { question: 'What is the warranty policy for TextNow accounts?', answer: 'We offer a 48-hour 100% free replacement warranty for initial login errors.' },
+      { question: 'Can I make voice calls using the TextNow web app?', answer: 'Yes, TextNow supports free web-based browser calling and texting.' },
+      { question: 'Can I change the password on the account after purchase?', answer: 'Yes, you have complete ownership to update security credentials.' },
+      { question: 'What crypto options can I use to purchase?', answer: 'We accept Bitcoin, Ethereum, USDT, Solana, Litecoin, and 7+ crypto coins.' }
+    ]
+  },
+
+  // 16. Talkatone Accounts & Subscription
+  {
+    id: 'talkatone-accounts',
+    slug: 'buy-talkatone-accounts',
+    categoryId: 'communication-accounts',
+    categoryName: 'Communication Accounts',
+    title: 'Talkatone Verified Accounts & Premium Pass',
+    variant: 'VoIP Line / 1-Month Pass',
+    price: 25,
+    unit: '1-Month Premium Pass',
+    isPopular: true,
+    deliveryTime: 'Instant Dispatch',
+    description: 'Verified Talkatone VoIP accounts and 1-month ad-free premium passes for unlimited calls and SMS.',
+    seoTitle: 'Buy Talkatone Accounts & Premium Subscription Pass',
+    seoKeywords: ['buy talkatone account', 'talkatone premium pass', 'talkatone virtual line', 'talkatone sms account', 'buy talkatone subscription'],
+    longDescription: `Talkatone is a premier VoIP platform offering persistent US virtual phone numbers with high compatibility for two-factor authentication (2FA) and activation SMS codes. ReviewSellStore provides verified single Talkatone accounts or 1-Month Premium Subscription Passes featuring locked phone numbers, ad-free calling, and high SMS receipt delivery rates.
+
+Unlike free temporary VoIP services where phone numbers expire quickly or are reassigned, Talkatone Premium Passes reserve your chosen US phone line for a full 30 days without expiration or auto-reassignment risks.
+
+Talkatone accounts are widely favored by marketers and entrepreneurs because their numbers bypass automated security filters on platforms that typically block low-tier VoIP providers. This makes Talkatone an ideal choice for receiving SMS verification codes from financial services, messaging apps, and social networks.
+
+Delivered with full administrative credentials: Account Email, Email Password, Assigned US Phone Number, and Premium Pass activation key. You have complete rights to update passwords and security preferences after purchase.
+
+For optimal performance outside the USA, we recommend accessing Talkatone using a clean US residential proxy or US VPN connection to match your account registration location.
+
+All Talkatone purchases are backed by our 48-hour 100% free replacement guarantee for any initial credential issues. Pay securely using Bitcoin, Ethereum, USDT, Solana, or major cryptocurrencies for instant automated delivery.`,
+    features: [
+      'Permanent US Virtual Phone Line Capability',
+      'Includes 1-Month Ad-Free Premium Subscription Pass Option',
+      'High SMS Verification Receipt Success Rate',
+      '48-Hour Free Replacement Warranty Included'
+    ],
+    variants: [
+      { id: 'tkt-1', name: '1 Talkatone Single Account', quantity: 1, price: 7, unit: 'Account' },
+      { id: 'tkt-pass', name: '1-Month Talkatone Premium Subscription', quantity: 1, price: 25, unit: '1 Month Pass', isPopular: true },
+      { id: 'tkt-5', name: '5 Talkatone Accounts', quantity: 5, price: 30, unit: 'Accounts', savePercent: 'Save $5' }
+    ],
+    faqs: [
+      { question: 'What is the difference between a single Talkatone account and a 1-Month Pass?', answer: 'Single accounts give you standard access, while the 1-Month Premium Pass locks your number permanently and removes ads.' },
+      { question: 'Can Talkatone receive SMS codes for banking or payment apps?', answer: 'Yes, Talkatone premium numbers have high compatibility with verification SMS gateways.' },
+      { question: 'How quickly will I get my Talkatone details?', answer: 'Orders are dispatched instantly to your email or Telegram support.' },
+      { question: 'Do I need a US VPN to use Talkatone?', answer: 'Yes, connecting through a US IP address ensures optimal app performance.' },
+      { question: 'What is the replacement warranty for Talkatone passes?', answer: 'We offer a 100% 48-hour replacement warranty for any credential issues.' },
+      { question: 'Can I renew the Talkatone subscription after 1 month?', answer: 'Yes, you can purchase additional monthly passes to extend your line.' },
+      { question: 'What details are delivered?', answer: 'Account email, password, assigned US phone number, and premium pass activation details.' },
+      { question: 'Which cryptocurrencies are supported for checkout?', answer: 'We support BTC, ETH, USDT, SOL, LTC, TRX, and DOGE.' }
+    ]
+  },
+
+  // 17. TextPlus Accounts & Subscription
+  {
+    id: 'textplus-accounts',
+    slug: 'buy-textplus-accounts',
+    categoryId: 'communication-accounts',
+    categoryName: 'Communication Accounts',
+    title: 'TextPlus Verified Accounts & Premium Pass',
+    variant: 'VoIP Line / 1-Month Pass',
+    price: 25,
+    unit: '1-Month Premium Pass',
+    deliveryTime: 'Instant Dispatch',
+    description: 'Verified TextPlus accounts for OTP SMS verification and persistent custom US line subscriptions.',
+    seoTitle: 'Buy TextPlus Accounts & Monthly Line Subscription',
+    seoKeywords: ['buy textplus account', 'textplus virtual line', 'textplus premium pass', 'textplus OTP account', 'buy textplus number'],
+    longDescription: `TextPlus provides clean, high-reputation North American virtual phone lines for SMS messaging, voice calls, and multi-factor authentication. ReviewSellStore supplies verified single TextPlus accounts as well as 1-Month Premium Line Subscriptions designed for project stability and persistent line reservation.
+
+TextPlus accounts feature high delivery rates for receiving verification SMS codes across social media apps, crypto exchanges, freelance hubs, and online service platforms.
+
+Choosing the 1-Month Premium Subscription Pass locks your assigned US phone number for a full 30 days without expiration, enabling you to use the same phone line repeatedly for long-term project communications.
+
+Every package is delivered with complete access details: Login Username or Email address, Password, Assigned US Phone Number string, and 48-hour free replacement guarantee.
+
+You receive full ownership to update passwords, recovery emails, and account security settings upon delivery. Enjoy fast automated dispatch following cryptocurrency payment confirmation on BTC, ETH, USDT, SOL, or LTC.`,
+    features: [
+      'Verified US Virtual Phone Number Line',
+      'Option for 1-Month Persistent Custom Line Subscription',
+      'Instant Credential File Delivery',
+      '48-Hour Replacement Guarantee'
+    ],
+    variants: [
+      { id: 'tpl-1', name: '1 TextPlus Single Account', quantity: 1, price: 7, unit: 'Account' },
+      { id: 'tpl-pass', name: '1-Month TextPlus Premium Subscription', quantity: 1, price: 25, unit: '1 Month Pass', isPopular: true },
+      { id: 'tpl-5', name: '5 TextPlus Accounts', quantity: 5, price: 30, unit: 'Accounts', savePercent: 'Save $5' }
+    ],
+    faqs: [
+      { question: 'What is included in a TextPlus order?', answer: 'Login credentials (username/email and password) along with assigned US phone number details.' },
+      { question: 'Is TextPlus compatible with social media OTP verification?', answer: 'Yes, TextPlus accounts easily receive verification codes for major apps.' },
+      { question: 'How long does line activation last on the 1-Month Pass?', answer: 'The 1-Month Pass keeps your assigned number reserved for a full 30 days without expiration.' },
+      { question: 'Is a replacement guarantee provided?', answer: 'Yes, we provide a 48-hour free replacement guarantee for any initial login issue.' },
+      { question: 'Should I use a US VPN when opening TextPlus?', answer: 'Yes, using a US IP prevents location mismatch flags.' },
+      { question: 'How is order delivery processed?', answer: 'Delivered automatically after crypto transaction confirmation.' },
+      { question: 'Can I change the password on the account?', answer: 'Yes, you have full administrative rights to change account passwords.' },
+      { question: 'Which payment options are supported?', answer: 'Pay securely using Bitcoin, Ethereum, USDT, Solana, or Litecoin.' }
+    ]
+  },
+
+  // 18. Aged GitHub Accounts
+  {
+    id: 'github-aged-accounts',
+    slug: 'buy-aged-github-accounts-repository-history',
+    categoryId: 'developer-accounts',
+    categoryName: 'Developer Accounts',
+    title: 'Aged GitHub Accounts with Commit History',
+    variant: '5+ & 7+ Years Aged',
+    price: 50,
+    unit: '7+ Year Account',
+    isPopular: true,
+    deliveryTime: '15 - 30 Mins',
+    description: 'Aged 5+ and 7+ year old GitHub developer accounts with established contribution graphs, commit logs, and clean standing.',
+    seoTitle: 'Buy Aged GitHub Accounts (5+ & 7+ Years) | Repository History',
+    seoKeywords: ['buy aged github account', 'github account with repository history', 'old github account', 'buy developer github', 'aged github profile'],
+    longDescription: `Establishing developer trust, open-source credibility, and instant authority requires aged GitHub profiles with real repository commit histories, public activity logs, and active contribution heatmaps. ReviewSellStore supplies aged GitHub developer accounts created between 2014 and 2019 (5+, 7+, and 10+ years aged).
+
+In the software development and Web3 crypto ecosystem, new GitHub accounts are frequently flagged or disqualified from crypto airdrops, testnet grants, developer bounties, and open-source pull request merges. An aged GitHub profile registered 5 to 10 years ago establishes immediate veteran status with repository reviewers, DAO grant committees, and Web3 project incubators.
+
+Every aged GitHub account features existing public repositories, real commit logs, clean security standing with zero shadowban flags, and complete administrative control. We include full access to the primary email account linked to the GitHub profile, allowing you to update passwords, change usernames, configure two-factor authentication (2FA), and transfer SSH deployment keys immediately.
+
+Aged GitHub accounts are essential assets for crypto project launches, smart contract deployments, open-source software maintenance, developer agency showcases, and qualifying for Web3 developer airdrop eligibility programs.
+
+Your order is delivered within 15 to 30 minutes with complete credentials: GitHub Username, Password, Primary Email Login Credentials, Recovery Email Password, and account creation history file.
+
+Backed by our 100% 48-hour free replacement guarantee for any initial credential mismatch or login error. Our developer support team on Telegram (@EgSupport24) is available 24/7. Pay securely using Bitcoin, Ethereum, USDT, Solana, or any major cryptocurrency.`,
+    features: [
+      'Created 2015 to 2019 (5+, 7+ & 10+ Years Aged)',
+      'Rich Green Contribution Heatmap & Existing Commit Logs',
+      'Original Primary Email Mailbox Access Included',
+      'Clean Security Standing & Unrestricted Account Status',
+      '24/7 Dedicated Developer Support on Telegram'
+    ],
+    useCases: ['Crypto & Web3 Project Launches', 'Developer Credibility & Open Source', 'Airdrop & Testnet Eligibility', 'Software Agency Showcase'],
+    variants: [
+      { id: 'gh-5yr', name: '5+ Years Aged GitHub Account', quantity: 1, price: 35, unit: 'Account' },
+      { id: 'gh-7yr', name: '7+ Years Aged GitHub Account', quantity: 1, price: 50, unit: 'Account', isPopular: true, savePercent: 'Most Popular' },
+      { id: 'gh-10yr', name: '10+ Years Veteran GitHub Account', quantity: 1, price: 90, unit: 'Account', savePercent: 'Veteran Class' }
+    ],
+    faqs: [
+      { question: 'Do I get access to the primary email attached to the GitHub account?', answer: 'Yes, full login credentials for the primary email account connected to the GitHub profile are delivered.' },
+      { question: 'Can I change the GitHub username, password, and SSH keys?', answer: 'Yes, you have full ownership to update the username, password, 2FA authenticator, and SSH keys immediately.' },
+      { question: 'Are these GitHub accounts clean with zero shadowbans or flags?', answer: 'Yes, all accounts have pristine security standing with clean contribution histories and no restrictions.' },
+      { question: 'What is the creation date range for these aged GitHub accounts?', answer: '5+ year accounts were created in 2018–2019, 7+ year accounts in 2016–2017, and 10+ year veteran accounts in 2014–2015.' },
+      { question: 'Can I use these accounts for crypto airdrops and Web3 project deployments?', answer: 'Yes, aged GitHub accounts are frequently required for crypto testnets, developer grants, and Web3 project launches.' },
+      { question: 'What is your replacement policy if there is an issue on initial login?', answer: 'We offer a 100% 48-hour replacement warranty if there is any initial credential mismatch.' },
+      { question: 'How long does delivery take after crypto payment?', answer: 'Account details and primary email logins are delivered within 15 to 30 minutes.' },
+      { question: 'What payment options do you accept?', answer: 'We accept Bitcoin (BTC), Ethereum (ETH), USDT, Solana (SOL), Litecoin (LTC), and major cryptocurrencies.' }
+    ]
+  }
+];
+
+export const CRYPTO_ADDRESSES: CryptoAddress[] = [
+  {
+    id: 'btc',
+    name: 'Bitcoin',
+    symbol: 'BTC',
+    network: 'Bitcoin Native (SegWit)',
+    address: 'bc1quckwjx8dscacalh606c8x2fuea3a3w884rzevk',
+    badgeColor: 'bg-amber-100 text-amber-800 border-amber-300',
+    isPopular: true
+  },
+  {
+    id: 'eth',
+    name: 'Ethereum',
+    symbol: 'ETH',
+    network: 'ERC20',
+    address: '0xF83739DBE20DCe5698c0150Ea1E1aBaA36f6F89D',
+    badgeColor: 'bg-indigo-100 text-indigo-800 border-indigo-300',
+    isPopular: true
+  },
+  {
+    id: 'sol',
+    name: 'Solana',
+    symbol: 'SOL',
+    network: 'Solana Native',
+    address: 'GZwc35H23Z4inSF46yihvnoHXUSvPuUzRU3SxihHmwoG',
+    badgeColor: 'bg-purple-100 text-purple-800 border-purple-300',
+    isPopular: true
+  },
+  {
+    id: 'usdt-trc20',
+    name: 'Tether USDT',
+    symbol: 'USDT',
+    network: 'TRC20',
+    address: 'TFshfiXsqxNxeTaNMojzVjynTfdAgxatVG',
+    badgeColor: 'bg-emerald-100 text-emerald-800 border-emerald-300',
+    isPopular: true
+  },
+  {
+    id: 'usdt-erc20',
+    name: 'Tether USDT',
+    symbol: 'USDT',
+    network: 'ERC20',
+    address: '0xF83739DBE20DCe5698c0150Ea1E1aBaA36f6F89D',
+    badgeColor: 'bg-teal-100 text-teal-800 border-teal-300'
+  },
+  {
+    id: 'usdt-bep20',
+    name: 'Tether USDT',
+    symbol: 'USDT',
+    network: 'BEP20',
+    address: '0xF83739DBE20DCe5698c0150Ea1E1aBaA36f6F89D',
+    badgeColor: 'bg-yellow-100 text-yellow-800 border-yellow-300'
+  },
+  {
+    id: 'usdc-erc20',
+    name: 'USD Coin',
+    symbol: 'USDC',
+    network: 'ERC20',
+    address: '0xF83739DBE20DCe5698c0150Ea1E1aBaA36f6F89D',
+    badgeColor: 'bg-blue-100 text-blue-800 border-blue-300'
+  },
+  {
+    id: 'bnb',
+    name: 'Binance Coin',
+    symbol: 'BNB',
+    network: 'BEP20',
+    address: '0xF83739DBE20DCe5698c0150Ea1E1aBaA36f6F89D',
+    badgeColor: 'bg-amber-100 text-amber-800 border-amber-300'
+  },
+  {
+    id: 'busd',
+    name: 'Binance USD',
+    symbol: 'BUSD',
+    network: 'BEP20',
+    address: '0xF83739DBE20DCe5698c0150Ea1E1aBaA36f6F89D',
+    badgeColor: 'bg-yellow-100 text-yellow-800 border-yellow-300'
+  },
+  {
+    id: 'ltc',
+    name: 'Litecoin',
+    symbol: 'LTC',
+    network: 'Litecoin Native',
+    address: 'ltc1qyxuhrmfyju7m97vtzs8pm2mg524vgxhkl8d54v',
+    badgeColor: 'bg-slate-100 text-slate-800 border-slate-300'
+  },
+  {
+    id: 'trx',
+    name: 'TRON',
+    symbol: 'TRX',
+    network: 'TRC20',
+    address: 'TFshfiXsqxNxeTaNMojzVjynTfdAgxatVG',
+    badgeColor: 'bg-rose-100 text-rose-800 border-rose-300'
+  },
+  {
+    id: 'doge',
+    name: 'Dogecoin',
+    symbol: 'DOGE',
+    network: 'DOGE Native',
+    address: 'DAcEHNib1JAmM8E53sBsV3RpzSUSVKyjSf',
+    badgeColor: 'bg-orange-100 text-orange-800 border-orange-300'
+  }
+];
+
+export const HOW_IT_WORKS_STEPS = [
+  {
+    step: '01',
+    title: 'Choose Your Service & Quantity',
+    description: 'Explore our catalog of verified PayPal accounts, Gmail packages, Google Voice, reviews, or GitHub accounts. Select your variant quantity.'
+  },
+  {
+    step: '02',
+    title: 'Contact Our Team or Instant Checkout',
+    description: 'Use our 1-click order builder or connect directly with our 24/7 support via Telegram or WhatsApp for custom bulk packages.'
+  },
+  {
+    step: '03',
+    title: 'Complete Crypto Payment',
+    description: 'Pay quickly and securely using any of our 12 accepted cryptocurrency networks with zero transaction surcharge.'
+  },
+  {
+    step: '04',
+    title: 'Receive Credentials',
+    description: 'Get your account credentials, login cookies, or review confirmation delivered fast directly to your inbox or chat.'
+  }
+];
+
+export const WHY_CHOOSE_US: WhyChooseUsItem[] = [
+  {
+    id: 'instant-delivery',
+    title: 'Instant Delivery',
+    description: 'Automated order processing ensures fast delivery of credentials right after crypto confirmation.',
+    icon: 'Zap'
+  },
+  {
+    id: 'secure-crypto',
+    title: 'Secure Crypto Payments',
+    description: 'Complete privacy & zero chargeback risk with 12 major cryptocurrency chains supported.',
+    icon: 'Shield'
+  },
+  {
+    id: 'premium-quality',
+    title: 'Premium Quality',
+    description: 'All accounts are phone verified, IP clean, and rigorously tested for long-term stability.',
+    icon: 'Award'
+  },
+  {
+    id: 'replacement-guarantee',
+    title: 'Replacement Guarantee',
+    description: 'Full warranty replacement for any login issues within our policy timeline.',
+    icon: 'RefreshCw'
+  },
+  {
+    id: 'support-247',
+    title: '24/7 Support',
+    description: 'Dedicated support team live on Telegram and WhatsApp round the clock.',
+    icon: 'Headphones'
+  },
+  {
+    id: 'affordable-pricing',
+    title: 'Affordable Pricing',
+    description: 'Direct supplier bulk rates on Gmail, PayPal, and reviews without middleman markups.',
+    icon: 'DollarSign'
+  },
+  {
+    id: 'global-customers',
+    title: 'Global Customers',
+    description: 'Trusted by over 1,500 enterprise clients, marketers, and developers worldwide.',
+    icon: 'Globe'
+  },
+  {
+    id: 'easy-ordering',
+    title: 'Easy Ordering',
+    description: 'Streamlined order workflow with live tracking and instant messenger confirmation.',
+    icon: 'CheckCircle2'
+  }
+];
+
+export const FAQS: FAQItem[] = [
+  {
+    id: 'faq-1',
+    category: 'Delivery',
+    question: 'How fast will I receive my order after payment?',
+    answer: 'Most digital accounts (USA Gmail, PVA Gmail, Google Voice, GitHub accounts) are delivered within 5 to 30 minutes after blockchain confirmation. Larger bulk orders or custom Google Review drip campaigns are scheduled according to your specified pace.'
+  },
+  {
+    id: 'faq-2',
+    category: 'Payment',
+    question: 'Which cryptocurrencies do you accept?',
+    answer: 'We accept BTC, ETH (ERC20), SOL, USDT (TRC20, ERC20, BEP20), USDC (ERC20), BNB (BEP20), BUSD (BEP20), LTC, TRX, and DOGE. Copy-to-clipboard wallet addresses are available on our Payment Methods page.'
+  },
+  {
+    id: 'faq-3',
+    category: 'Accounts',
+    question: 'Are the PayPal and Gmail accounts phone-verified?',
+    answer: 'Yes! All accounts are 100% Phone Verified (PVA) using unique real carrier SIMs. PayPal accounts include linked bank/card verification status and cookies/user agent details for smooth logins.'
+  },
+  {
+    id: 'faq-4',
+    category: 'Guarantee',
+    question: 'What is your replacement warranty policy?',
+    answer: 'We offer a 100% replacement guarantee if you encounter any initial login errors or disabled credentials upon delivery. Contact our Telegram (@EgSupport24) or WhatsApp (+1 307-393-9979) with your order ID for instant replacement.'
+  },
+  {
+    id: 'faq-5',
+    category: 'Reviews',
+    question: 'Are Google and Trustpilot reviews sticky and non-drop?',
+    answer: 'Yes. We post reviews using aged, organic profiles with realistic location data and custom drip-feed schedules so they pass Google and Trustpilot fraud algorithms safely.'
+  },
+  {
+    id: 'faq-6',
+    category: 'Custom Orders',
+    question: 'Can I request custom quantities or test a small sample first?',
+    answer: 'Absolutely! For custom quantities or to test any service before placing a larger bulk order, message our team directly via Telegram (@EgSupport24) or WhatsApp (+1 307 393-9979).'
+  }
+];
+
+export function getServiceBySlug(slug: string): ServiceItem | undefined {
+  return ALL_SERVICES.find(s => s.slug === slug || s.id === slug);
+}

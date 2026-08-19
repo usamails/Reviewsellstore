@@ -1,0 +1,31 @@
+# Robots.txt for ReviewSellStore.com
+# Allow all search engines full access to crawl indexable content
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /order-tracking
+Disallow: /404
+
+User-agent: Googlebot
+Allow: /
+Allow: /services
+Allow: /blog
+Allow: /pricing
+Allow: /faq
+Allow: /about
+Allow: /contact
+Allow: /payment-methods
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+Sitemap: https://reviewsellstore.com/sitemap.xml
+Sitemap: https://reviewsellstore.com/sitemap-index.xml
+Host: reviewsellstore.com

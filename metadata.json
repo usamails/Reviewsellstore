@@ -1,0 +1,6 @@
+{
+  "name": "ReviewSellStore",
+  "description": "Your Trusted Digital Services Marketplace. Buy verified PayPal, Gmail, Google Voice, Trustpilot reviews, Google reviews, and developer accounts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
